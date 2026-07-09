@@ -339,34 +339,42 @@ img { max-width: 100%; }
 .how__foot p { font-size: 17px; line-height: 1.7; color: var(--th-ink-700); }
 .how__foot strong { color: var(--th-ink-900); }
 
-/* ---------- Timeline ---------- */
+/* ---------- Timeline tree ---------- */
 .timeline { padding: 96px 0; background: #fff; }
-.timeline__legend { display: flex; justify-content: center; gap: 20px; font-size: 13px; font-weight: 600; color: var(--th-ink-700); flex-wrap: wrap; }
-.timeline__legend span { display: flex; align-items: center; gap: 6px; }
-.legend-swatch { width: 12px; height: 12px; border-radius: 4px; display: block; }
-.day-strip { display: grid; grid-template-columns: repeat(28, 1fr); gap: 6px; margin-bottom: 12px; }
-.day-cell { height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
-.week-labels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 48px; }
-.week-labels div { text-align: center; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--th-ink-500); }
-.week-cards { display: grid; gap: 24px; }
-.week-card {
-  background: #fff; border: 1px solid var(--th-ink-300); border-radius: 12px; padding: 32px;
-  display: grid; grid-template-columns: 200px 1fr; gap: 32px; align-items: start;
+.tree { margin-top: 8px; }
+
+/* Trunk: shared Weeks 1–2 */
+.tree__trunk { display: flex; justify-content: center; }
+.trunk-card {
+  width: 100%; max-width: 760px; background: var(--th-ink-900); color: #fff;
+  border-radius: 12px; padding: 32px 36px; box-shadow: var(--shadow-card);
 }
-.week-card__eyebrow { font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 12px; }
-.week-card__title { font-size: 24px; font-weight: 700; color: var(--th-ink-900); margin-top: 4px; line-height: 1.2; }
-.week-card__days { font-size: 13px; color: var(--th-ink-500); margin-top: 8px; font-weight: 600; }
-.week-card__body { font-size: 16px; line-height: 1.7; color: var(--th-ink-700); }
-.week-card__body p { margin: 0 0 12px; }
-.pill {
-  display: inline-flex; align-items: center; gap: 8px; background: var(--th-ink-100);
-  border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; color: var(--th-ink-900);
+.trunk-card__head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; flex-wrap: wrap; }
+.trunk-card__days { font-family: var(--font-mono); font-size: 13px; font-weight: 500; color: var(--th-ink-300); }
+.trunk-card__title { font-size: 24px; font-weight: 700; color: #fff; line-height: 1.25; margin-bottom: 12px; }
+.trunk-card__body { font-size: 15px; line-height: 1.7; color: rgba(255,255,255,0.85); margin: 0; }
+
+/* Connector: trunk fans into three branches */
+.tree__connector { position: relative; height: 46px; }
+.tc-stem { position: absolute; left: 50%; top: 0; width: 2px; height: 23px; background: var(--th-ink-300); transform: translateX(-50%); border-radius: 2px; }
+.tc-bus { position: absolute; top: 22px; height: 2px; left: calc((100% - 48px) / 6); right: calc((100% - 48px) / 6); background: var(--th-ink-300); border-radius: 2px; }
+.tc-drop { position: absolute; top: 22px; width: 2px; height: 24px; background: var(--th-ink-300); border-radius: 2px; }
+.tc-drop--1 { left: calc((100% - 48px) / 6); transform: translateX(-50%); }
+.tc-drop--2 { left: 50%; transform: translateX(-50%); }
+.tc-drop--3 { right: calc((100% - 48px) / 6); transform: translateX(50%); }
+
+/* Branches: Weeks 3–4 track options */
+.tree__branches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.branch-card {
+  background: #fff; border: 1px solid var(--th-ink-300); border-top: 4px solid var(--accent, var(--th-green-500));
+  border-radius: 12px; padding: 28px; display: flex; flex-direction: column;
 }
-.timeline__callout {
-  margin-top: 32px; background: var(--th-green-100); border-radius: 12px; padding: 24px 32px;
-  display: flex; gap: 16px; align-items: center;
-}
-.timeline__callout p { margin: 0; font-size: 16px; line-height: 1.6; color: var(--th-ink-900); font-weight: 500; }
+.branch-card__eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--th-ink-500); margin: 0; }
+.branch-card__title { font-size: 22px; font-weight: 700; color: var(--th-ink-900); margin-top: 4px; line-height: 1.2; }
+.branch-card__list { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 12px; }
+.branch-card__list li { position: relative; padding-left: 20px; font-size: 14px; line-height: 1.6; color: var(--th-ink-700); }
+.branch-card__list li::before { content: ''; position: absolute; left: 0; top: 8px; width: 7px; height: 7px; border-radius: 2px; background: var(--accent, var(--th-green-500)); }
+.branch-card__foot { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--th-ink-100); font-size: 14px; font-weight: 600; color: var(--th-ink-900); line-height: 1.5; }
 
 /* ---------- What you'll learn ---------- */
 .learn { padding: 96px 0; background: var(--th-ink-100); }
@@ -480,9 +488,10 @@ img { max-width: 100%; }
   .enemy__cards { grid-template-columns: 1fr; }
   .how__cards { grid-template-columns: 1fr; }
   .learn__grid { grid-template-columns: 1fr; }
-  .week-card { grid-template-columns: 1fr; gap: 16px; }
-  .day-strip { grid-template-columns: repeat(14, 1fr); }
-  .week-labels { display: none; }
+  .tree__connector { display: none; }
+  .tree__branches { grid-template-columns: 1fr; gap: 16px; margin-top: 24px; }
+  .trunk-card { padding: 28px 24px; }
+  .trunk-card__title { font-size: 20px; }
   .offer__box { padding: 32px 24px; }
   .offer__guarantee { flex-direction: column; align-items: flex-start; }
   .who__slider { height: auto; flex-direction: column; }

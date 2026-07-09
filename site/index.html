@@ -277,91 +277,84 @@
 <!-- ============ 6. THE 28-DAY TIMELINE ============ -->
 <section class="timeline" id="timeline" aria-label="The 28-day timeline">
   <div class="container">
-    <div class="section-head" style="max-width:640px;">
+    <div class="section-head" style="max-width:660px;">
       <div class="eyebrow">The 28-day timeline</div>
-      <h2>Every day, mapped. No mystery.</h2>
-      <div class="timeline__legend">
-        <span><span class="legend-swatch" style="background:#1EA7FD;"></span> Chat tools</span>
-        <span><span class="legend-swatch" style="background:#FFD23F;"></span> Advanced prompting</span>
-        <span><span class="legend-swatch" style="background:#5FCF80;"></span> MVP build</span>
-        <span><span class="legend-swatch" style="background:#1B2733;"></span> Launch your idea</span>
-      </div>
+      <h2>One foundation. Then your path.</h2>
+      <p style="font-size:18px; line-height:1.6; color:#3E4C59; margin:0;">Everyone starts on the same trunk — two weeks of foundations every builder needs. Then in Weeks 3–4 you branch into the track that fits what you want to make.</p>
     </div>
 
-    <div class="day-strip" id="dayStrip"></div>
-    <div class="week-labels">
-      <div>Week 1</div><div>Week 2</div><div>Week 3</div><div>Week 4</div>
-    </div>
-
-    <div class="week-cards">
-      <div class="week-card">
-        <div>
-          <span class="tag tag-pop">Foundations</span>
-          <div class="week-card__eyebrow" style="color:#0C7CD5;">Week 1</div>
-          <div class="week-card__title">Chat tools and prompting</div>
-          <div class="week-card__days">Days 1–7</div>
-        </div>
-        <div class="week-card__body">
-          <p>You live in the chat tools: ChatGPT, Claude, Gemini, Perplexity. But the way you use them escalates daily. Framing strategies. Zero-shot vs. few-shot. Chain of thought. How to manage conversations, spot AI mistakes, and build safety habits from day one. Your prompt library starts on Day 4.</p>
-          <div class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 L18 3 L18 21 L12 17 L6 21 Z"></path></svg>
-            Weekend project: your persona card + problem statement, living in your first Claude Project
+    <div class="tree">
+      <!-- Trunk: shared Weeks 1–2 -->
+      <div class="tree__trunk">
+        <div class="trunk-card">
+          <div class="trunk-card__head">
+            <span class="tag tag-new">Foundations · Shared track</span>
+            <span class="trunk-card__days">Weeks 1–2 · Days 1–14</span>
           </div>
+          <div class="trunk-card__title">Chat tools, prompting &amp; your first builds</div>
+          <p class="trunk-card__body">Everyone starts here. You live in the chat tools — ChatGPT, Claude, Gemini, Perplexity — and level up fast: framing, few-shot, chain of thought, spotting mistakes, and safety habits. Then context goes deep with Projects, mega-prompts, and the context-file pattern the pros use. You learn to write a spec, get your first taste of builder tools, and start the prompt library that grows the whole way through.</p>
         </div>
       </div>
 
-      <div class="week-card">
-        <div>
-          <span class="tag tag-free">Foundations</span>
-          <div class="week-card__eyebrow" style="color:#8A6200;">Week 2</div>
-          <div class="week-card__title">Advanced prompting and builder tools</div>
-          <div class="week-card__days">Days 8–14</div>
-        </div>
-        <div class="week-card__body">
-          <p>Context goes deep: Claude Projects, structured outputs, mega-prompts, and the context file pattern the pros use. Then you learn the most underrated skill in AI building — writing a spec — and get your first taste of builder tools. You'll watch your words become a working interface.</p>
-          <div class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 L18 3 L18 21 L12 17 L6 21 Z"></path></svg>
-            Weekend project: the written spec for the thing you're about to build
-          </div>
-        </div>
+      <!-- Connector: trunk fans into three branches -->
+      <div class="tree__connector" aria-hidden="true">
+        <span class="tc-stem"></span>
+        <span class="tc-bus"></span>
+        <span class="tc-drop tc-drop--1"></span>
+        <span class="tc-drop tc-drop--2"></span>
+        <span class="tc-drop tc-drop--3"></span>
       </div>
 
-      <div class="week-card">
-        <div>
-          <span class="tag tag-rec">Build</span>
-          <div class="week-card__eyebrow" style="color:#2E8B57;">Week 3</div>
-          <div class="week-card__title">Build your MVP</div>
-          <div class="week-card__days">Days 15–21</div>
-        </div>
-        <div class="week-card__body">
-          <p>Pick your track: an AI agent, a web app, or a data dashboard. Guided build sessions all week using Claude Code, Codex, or Lovable. Your build log captures every decision along the way.</p>
-          <div class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 L18 3 L18 21 L12 17 L6 21 Z"></path></svg>
-            Weekend milestone: a rough, working MVP. Ugly is fine. Working is the point.
+      <!-- Branches: Weeks 3–4 track options -->
+      <div class="tree__branches">
+        <!-- Track 1: Web apps -->
+        <div class="branch-card" style="--accent:#1EA7FD;">
+          <div class="icon-badge" style="background:#E6F4FD;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0C7CD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9 L21 9"></path></svg>
           </div>
+          <div class="branch-card__eyebrow">Track 1 · Weeks 3–4</div>
+          <div class="branch-card__title">Web apps</div>
+          <ul class="branch-card__list">
+            <li>Usually when your idea is something people open, click through, and interact with — a tool, a form, a small product.</li>
+            <li>Or when you want a real interface: pages, buttons, inputs, and a place for users to actually do something.</li>
+            <li>It also makes sense when you're turning a manual process or a spreadsheet into something people can genuinely use.</li>
+            <li>And it's a great fit for problems that sound like: &ldquo;I wish there were an app that just let me…&rdquo;</li>
+          </ul>
+          <div class="branch-card__foot">If that sounds like your project, then the web app track might be the right fit for you.</div>
+        </div>
+
+        <!-- Track 2: AI agents -->
+        <div class="branch-card" style="--accent:#2E8B57;">
+          <div class="icon-badge" style="background:#E8F7EE;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 L5 13 L11 13 L11 21 L19 11 L13 11 Z"></path></svg>
+          </div>
+          <div class="branch-card__eyebrow">Track 2 · Weeks 3–4</div>
+          <div class="branch-card__title">AI agents</div>
+          <ul class="branch-card__list">
+            <li>Usually when your idea involves automation — things like &ldquo;when this happens, do that.&rdquo;</li>
+            <li>Or when your users would benefit from AI acting on their behalf.</li>
+            <li>It also makes sense when the core value is saving time on repetitive, multi-step tasks…</li>
+            <li>…or when the problem involves pulling together information from multiple sources.</li>
+          </ul>
+          <div class="branch-card__foot">If that sounds like your project, then the AI agent track might be the right fit for you.</div>
+        </div>
+
+        <!-- Track 3: Data dashboards -->
+        <div class="branch-card" style="--accent:#F5B82E;">
+          <div class="icon-badge" style="background:#FFF3D0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A6200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 L20 20"></path><path d="M7 20 L7 12"></path><path d="M12 20 L12 6"></path><path d="M17 20 L17 15"></path></svg>
+          </div>
+          <div class="branch-card__eyebrow">Track 3 · Weeks 3–4</div>
+          <div class="branch-card__title">Data dashboards</div>
+          <ul class="branch-card__list">
+            <li>Usually when your app is about tracking, measuring, or monitoring something.</li>
+            <li>Or when the value comes from helping users spot patterns they'd miss on their own.</li>
+            <li>Especially useful when users make decisions based on numbers — sales, health, finance, operations, or productivity.</li>
+            <li>And a perfect fit for problems that sound like: &ldquo;I have the data… I just don't know what to do with it.&rdquo;</li>
+          </ul>
+          <div class="branch-card__foot">If that sounds like your project, then the data dashboard track might be the right path for you.</div>
         </div>
       </div>
-
-      <div class="week-card">
-        <div>
-          <span class="tag tag-cert">Launch</span>
-          <div class="week-card__eyebrow" style="color:#1B2733;">Week 4</div>
-          <div class="week-card__title">Polish and launch your idea</div>
-          <div class="week-card__days">Days 22–28</div>
-        </div>
-        <div class="week-card__body">
-          <p>Refine and polish. Deploy it. Build the landing page for your project and get a live link you can share with anyone. Final weekend: showcase. You put your work in front of the community, and you earn your certificate of completion.</p>
-          <div class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 L18 3 L18 21 L12 17 L6 21 Z"></path></svg>
-            Day 28: your project is live, your link is shareable, your certificate is earned.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline__callout">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M4 19 L4 5 C4 3.9 4.9 3 6 3 L20 3 L20 17 L6 17 C4.9 17 4 17.9 4 19 Z"></path><path d="M4 19 C4 20.1 4.9 21 6 21 L20 21"></path></svg>
-      <p><strong>Running the entire time: your prompt library.</strong> It starts Day 4 and grows every day. On Day 28 it walks out the door with you, and it keeps working long after the bootcamp ends.</p>
     </div>
   </div>
 </section>

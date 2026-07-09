@@ -3,37 +3,7 @@
   'use strict';
 
   /* ---------------------------------------------------------
-     1. 28-day strip — one solid color per week (weekends included)
-     --------------------------------------------------------- */
-  var weekColors = [
-    { bg: '#1EA7FD', fg: '#FFFFFF' },
-    { bg: '#FFD23F', fg: '#1B2733' },
-    { bg: '#5FCF80', fg: '#FFFFFF' },
-    { bg: '#1B2733', fg: '#FFFFFF' }
-  ];
-  var weekNames = [
-    'Week 1 · Foundations: Chat tools and prompting',
-    'Week 2 · Foundations: Advanced prompting and builder tools',
-    'Week 3 · Build your MVP',
-    'Week 4 · Polish and launch your idea'
-  ];
-  var dayStrip = document.getElementById('dayStrip');
-  if (dayStrip) {
-    for (var i = 0; i < 28; i++) {
-      var week = Math.floor(i / 7);
-      var c = weekColors[week];
-      var cell = document.createElement('div');
-      cell.className = 'day-cell';
-      cell.style.background = c.bg;
-      cell.style.color = c.fg;
-      cell.title = weekNames[week];
-      cell.textContent = String(i + 1);
-      dayStrip.appendChild(cell);
-    }
-  }
-
-  /* ---------------------------------------------------------
-     2. "Who this bootcamp is for" — expanding photo slider
+     "Who this bootcamp is for" — expanding photo slider
      --------------------------------------------------------- */
   var whoData = [
     { label: 'AI curious',    desc: 'Heard a lot about AI, touched very little of it. The perfect starting point.', src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80' },
