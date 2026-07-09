@@ -9,35 +9,6 @@
 </head>
 <body>
 
-<!-- ============ STICKY BAR (appears on scroll) ============ -->
-<div class="sticky-bar" id="stickyBar" hidden>
-  <div class="sticky-bar__inner">
-    <div class="sticky-bar__left">
-      <img src="assets/logo/mark.svg" width="26" height="26" alt="">
-      <span class="sticky-bar__text">28-Day AI Bootcamp · Included with membership · Start anytime</span>
-    </div>
-    <a href="#offer" class="btn btn-primary" style="font-size:15px; padding:10px 20px;">Start Building →</a>
-  </div>
-</div>
-
-<!-- ============ SITE HEADER ============ -->
-<header class="site-header">
-  <div class="site-header__inner">
-    <img src="assets/logo/wordmark.svg" height="30" alt="Treehouse" style="display:block; flex-shrink:0;">
-    <nav class="site-nav">
-      <span>Tracks</span>
-      <span>Techdegree</span>
-      <span class="site-nav__active">AI Bootcamp <span class="tag tag-new">New</span></span>
-      <span>Library</span>
-      <span>Pricing</span>
-    </nav>
-    <div class="site-header__right">
-      <span class="site-header__signin">Sign in</span>
-      <a href="#offer" class="btn btn-primary">Start Building</a>
-    </div>
-  </div>
-</header>
-
 <!-- ============ 1. HERO ============ -->
 <section class="hero" aria-label="Hero">
   <div class="hero__grid">
@@ -102,7 +73,36 @@
   </div>
 </section>
 
-<!-- ============ 2. THE ENEMY ============ -->
+<!-- ============ 2. PROGRAM OVERVIEW ============ -->
+<section class="overview" aria-label="Program overview">
+  <div class="container">
+    <div class="section-head" style="max-width:660px;">
+      <div class="eyebrow eyebrow--green">Treehouse · 28-Day AI Bootcamp</div>
+      <h2>Program overview</h2>
+      <p style="font-size:18px; line-height:1.6; color:#3E4C59; margin:0;">A 28-day guided bootcamp built for total beginners. Watch a few short videos each day, then build hands-on. By Day 28 you'll have shipped a real AI agent, web app, or data dashboard, with a live link you can share with anyone.</p>
+    </div>
+    <div class="overview__stats">
+      <div class="ov-stat">
+        <div class="ov-stat__num">28 days</div>
+        <div class="ov-stat__label">Guided, day-by-day curriculum</div>
+      </div>
+      <div class="ov-stat">
+        <div class="ov-stat__num">1 hr<span> / day</span></div>
+        <div class="ov-stat__label">15–20 min video, then hands-on</div>
+      </div>
+      <div class="ov-stat">
+        <div class="ov-stat__num">3 tracks</div>
+        <div class="ov-stat__label">AI agent, web app, or dashboard</div>
+      </div>
+      <div class="ov-stat">
+        <div class="ov-stat__num">Included</div>
+        <div class="ov-stat__label">With any paid Treehouse plan</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. THE PROBLEM ============ -->
 <section class="enemy" aria-label="The problem">
   <div class="enemy__narrow">
     <div class="eyebrow" style="text-align:center;">The real gap</div>
@@ -137,7 +137,7 @@
   </div>
 </section>
 
-<!-- ============ 3. EPIPHANY / MECHANISM ============ -->
+<!-- ============ 4. THE BUILDER'S PATH ============ -->
 <section class="mechanism" aria-label="The Builder's Path">
   <div class="container">
     <div class="mechanism__grid">
@@ -184,108 +184,56 @@
   </div>
 </section>
 
-<!-- ============ 4a. WHO THIS BOOTCAMP IS FOR (photo slider) ============ -->
-<section class="who" aria-label="Who this bootcamp is for">
+<!-- ============ 5. SKILLS YOU'LL MASTER ============ -->
+<section class="learn" aria-label="Skills you'll master and how it works">
   <div class="container">
-    <div class="who__head">
-      <h2>Who this bootcamp is for</h2>
-      <div class="who__rule"></div>
+    <div class="section-head" style="max-width:600px;">
+      <div class="eyebrow">Skills you'll master</div>
+      <h2 style="margin-bottom:0;">The skills under the projects.</h2>
     </div>
-    <div class="who__slider" id="whoSlider">
-      <!-- cards injected/enhanced by main.js; static markup ensures no-JS fallback -->
+    <div class="learn__grid">
+      <div class="learn-card">
+        <div class="icon-badge" style="background:#E6F4FD;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0C7CD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12 C21 16.4 17 20 12 20 C10.8 20 9.7 19.8 8.7 19.5 L4 21 L5.5 17.2 C4 15.8 3 14 3 12 C3 7.6 7 4 12 4 C17 4 21 7.6 21 12 Z"></path></svg>
+        </div>
+        <div class="learn-card__title">Prompting craft</div>
+        <div class="learn-card__body">Framing, few-shot patterns, chain of thought, mega-prompts. Repeatable technique instead of lucky guesses.</div>
+      </div>
+      <div class="learn-card">
+        <div class="icon-badge" style="background:#FFF3D0;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A6200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6 L20 6"></path><path d="M4 12 L20 12"></path><path d="M4 18 L14 18"></path></svg>
+        </div>
+        <div class="learn-card__title">Context engineering</div>
+        <div class="learn-card__body">Projects, Gems, and context files. The single biggest gap between casual users and power users.</div>
+      </div>
+      <div class="learn-card">
+        <div class="icon-badge" style="background:#E8F7EE;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 7 L20 12 C20 16.5 16.5 20.3 12 21 C7.5 20.3 4 16.5 4 12 L4 7 Z"></path></svg>
+        </div>
+        <div class="learn-card__title">AI judgment</div>
+        <div class="learn-card__body">Failure modes, verification habits, safety practices, and when a paid plan is actually worth it.</div>
+      </div>
+      <div class="learn-card">
+        <div class="icon-badge" style="background:#E8F7EE;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8 L4 12 L8 16"></path><path d="M16 8 L20 12 L16 16"></path><path d="M13 5 L11 19"></path></svg>
+        </div>
+        <div class="learn-card__title">Builder tools</div>
+        <div class="learn-card__body">Claude Code, Codex, and Lovable. From description to deployed software.</div>
+      </div>
+      <div class="learn-card">
+        <div class="icon-badge" style="background:#E6F4FD;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0C7CD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 C12 3 6 9 6 14 C6 17.3 8.7 20 12 20 C15.3 20 18 17.3 18 14 C18 9 12 3 12 3 Z" transform="rotate(45 12 12)"></path></svg>
+        </div>
+        <div class="learn-card__title">Shipping skills</div>
+        <div class="learn-card__body">Writing specs, keeping build logs, launching pages, sharing your work. The skills that make the next build faster than this one.</div>
+      </div>
+      <div class="learn-card learn-card--dark">
+        <div class="learn-card__title">Tools will change. The path doesn't.</div>
+        <div class="learn-card__body">Learn the way once and every new tool is just another step on it.</div>
+      </div>
     </div>
-    <p class="who__foot">Whether you're technical or not, if you want to build, this is for you.</p>
-  </div>
-</section>
 
-<!-- ============ 4. WHO IT'S FOR (checklist) ============ -->
-<section class="forme" aria-label="Who it's for">
-  <div class="container">
-    <h2 class="h2-center" style="margin-bottom:48px;">This was built for you if…</h2>
-    <div class="forme__grid">
-      <div class="forme__list">
-        <div class="check-row">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg>
-          <span>You're a professional who keeps hearing &ldquo;learn AI&rdquo; and nobody will tell you what that actually means</span>
-        </div>
-        <div class="check-row">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg>
-          <span>You're tired of nodding along in meetings about AI you don't really understand</span>
-        </div>
-        <div class="check-row">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg>
-          <span>You have an idea for an app or a tool, and &ldquo;I'm not technical&rdquo; has been the wall for years</span>
-        </div>
-        <div class="check-row">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg>
-          <span>AI honestly makes you a little nervous, and you'd rather face it than keep avoiding it</span>
-        </div>
-        <div class="check-row">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg>
-          <span>You've never written a line of code. Perfect. Day 1 assumes nothing.</span>
-        </div>
-      </div>
-      <div class="notforme">
-        <div class="notforme__label">It's not for you if…</div>
-        <div class="x-row">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF6B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:3px;"><path d="M6 6 L18 18"></path><path d="M18 6 L6 18"></path></svg>
-          <span>You're a working developer looking for machine learning theory</span>
-        </div>
-        <div class="x-row">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF6B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:3px;"><path d="M6 6 L18 18"></path><path d="M18 6 L6 18"></path></svg>
-          <span>You want to watch videos passively and collect a certificate</span>
-        </div>
-        <div class="x-row">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF6B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:3px;"><path d="M6 6 L18 18"></path><path d="M18 6 L6 18"></path></svg>
-          <span>You're not willing to make something every single day, even something small</span>
-        </div>
-        <p class="notforme__foot">If you're in the first list, keep reading. The next section is your next 28 days.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 5. TRANSFORMATION ============ -->
-<section class="transform" aria-label="The transformation">
-  <div class="transform__wrap">
-    <h2 class="h2-center" style="margin-bottom:48px;">Day 1 you. Day 28 you.</h2>
-    <div class="transform__table">
-      <div class="transform__row">
-        <div class="tr-head-1">Day 1</div>
-        <div class="tr-head-2">Day 28</div>
-      </div>
-      <div class="transform__row">
-        <div class="tr-before">AI feels like a threat you're supposed to keep up with</div>
-        <div class="tr-after">AI is leverage you reach for on purpose</div>
-      </div>
-      <div class="transform__row">
-        <div class="tr-before">&ldquo;I'm not a technical person&rdquo;</div>
-        <div class="tr-after">&ldquo;Here, let me show you what I built&rdquo;</div>
-      </div>
-      <div class="transform__row">
-        <div class="tr-before">Prompting means typing and hoping</div>
-        <div class="tr-after">Prompting is a craft with named techniques you own</div>
-      </div>
-      <div class="transform__row">
-        <div class="tr-before">Ideas stay in the someday pile</div>
-        <div class="tr-after">Your idea is live, with a link you can share with anyone</div>
-      </div>
-      <div class="transform__row">
-        <div class="tr-before">Reading about what other people build</div>
-        <div class="tr-after">Other people asking how you built yours</div>
-      </div>
-    </div>
-    <p class="transform__note">Here's the moment we build toward: you send someone the link to your project. Thirty seconds later they say <strong>&ldquo;wait, YOU made this?&rdquo;</strong> That moment changes how you see AI. More importantly, it changes how you see yourself.</p>
-    <div style="text-align:center; margin-top:32px;">
-      <a href="#offer" class="btn btn-primary btn-lg">Start Building →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 6. HOW IT WORKS ============ -->
-<section class="how" aria-label="How it works">
-  <div class="container">
-    <div class="section-head" style="max-width:640px;">
+    <div class="section-head" style="max-width:640px; margin-top:80px;">
       <div class="eyebrow">How it works</div>
       <h2>A system, not a firehose.</h2>
       <p style="font-size:18px; line-height:1.6; color:#3E4C59; margin:0;"><strong style="color:#1B2733;">Plan on one hour a day.</strong> 15–20 minutes of video, then the rest hands-on, trying things yourself. Learn, then make. Learn, then make.</p>
@@ -326,7 +274,7 @@
   </div>
 </section>
 
-<!-- ============ 7. THE 28-DAY TIMELINE ============ -->
+<!-- ============ 6. THE 28-DAY TIMELINE ============ -->
 <section class="timeline" id="timeline" aria-label="The 28-day timeline">
   <div class="container">
     <div class="section-head" style="max-width:640px;">
@@ -418,58 +366,7 @@
   </div>
 </section>
 
-<!-- ============ 8. WHAT YOU'LL LEARN ============ -->
-<section class="learn" aria-label="What you'll learn">
-  <div class="container">
-    <div class="section-head" style="max-width:600px;">
-      <div class="eyebrow">What you'll learn</div>
-      <h2 style="margin-bottom:0;">The skills under the projects.</h2>
-    </div>
-    <div class="learn__grid">
-      <div class="learn-card">
-        <div class="icon-badge" style="background:#E6F4FD;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0C7CD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12 C21 16.4 17 20 12 20 C10.8 20 9.7 19.8 8.7 19.5 L4 21 L5.5 17.2 C4 15.8 3 14 3 12 C3 7.6 7 4 12 4 C17 4 21 7.6 21 12 Z"></path></svg>
-        </div>
-        <div class="learn-card__title">Prompting craft</div>
-        <div class="learn-card__body">Framing, few-shot patterns, chain of thought, mega-prompts. Repeatable technique instead of lucky guesses.</div>
-      </div>
-      <div class="learn-card">
-        <div class="icon-badge" style="background:#FFF3D0;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A6200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6 L20 6"></path><path d="M4 12 L20 12"></path><path d="M4 18 L14 18"></path></svg>
-        </div>
-        <div class="learn-card__title">Context engineering</div>
-        <div class="learn-card__body">Projects, Gems, and context files. The single biggest gap between casual users and power users.</div>
-      </div>
-      <div class="learn-card">
-        <div class="icon-badge" style="background:#E8F7EE;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 7 L20 12 C20 16.5 16.5 20.3 12 21 C7.5 20.3 4 16.5 4 12 L4 7 Z"></path></svg>
-        </div>
-        <div class="learn-card__title">AI judgment</div>
-        <div class="learn-card__body">Failure modes, verification habits, safety practices, and when a paid plan is actually worth it.</div>
-      </div>
-      <div class="learn-card">
-        <div class="icon-badge" style="background:#E8F7EE;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8 L4 12 L8 16"></path><path d="M16 8 L20 12 L16 16"></path><path d="M13 5 L11 19"></path></svg>
-        </div>
-        <div class="learn-card__title">Builder tools</div>
-        <div class="learn-card__body">Claude Code, Codex, and Lovable. From description to deployed software.</div>
-      </div>
-      <div class="learn-card">
-        <div class="icon-badge" style="background:#E6F4FD;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0C7CD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 C12 3 6 9 6 14 C6 17.3 8.7 20 12 20 C15.3 20 18 17.3 18 14 C18 9 12 3 12 3 Z" transform="rotate(45 12 12)"></path></svg>
-        </div>
-        <div class="learn-card__title">Shipping skills</div>
-        <div class="learn-card__body">Writing specs, keeping build logs, launching pages, sharing your work. The skills that make the next build faster than this one.</div>
-      </div>
-      <div class="learn-card learn-card--dark">
-        <div class="learn-card__title">Tools will change. The path doesn't.</div>
-        <div class="learn-card__body">Learn the way once and every new tool is just another step on it.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 9. THE STACK ============ -->
+<!-- ============ 7. WHAT YOU WALK AWAY WITH ============ -->
 <section class="stack" aria-label="What you walk away with">
   <div class="container">
     <div class="stack__grid">
@@ -521,7 +418,21 @@
   </div>
 </section>
 
-<!-- ============ 10. CREDIBILITY ============ -->
+<!-- ============ 8. WHO THIS IS FOR ============ -->
+<section class="who" aria-label="Who this bootcamp is for">
+  <div class="container">
+    <div class="who__head">
+      <h2>Who this bootcamp is for</h2>
+      <div class="who__rule"></div>
+    </div>
+    <div class="who__slider" id="whoSlider">
+      <!-- cards injected/enhanced by main.js; static markup ensures no-JS fallback -->
+    </div>
+    <p class="who__foot">Whether you're technical or not, if you want to build, this is for you.</p>
+  </div>
+</section>
+
+<!-- ============ 9. FROM TREEHOUSE ============ -->
 <section class="cred" aria-label="About Treehouse">
   <div class="container">
     <div class="cred__grid">
@@ -554,7 +465,7 @@
   </div>
 </section>
 
-<!-- ============ 12. FAQ ============ -->
+<!-- ============ 10. FAQ ============ -->
 <section class="faq" aria-label="Frequently asked questions">
   <div class="faq__wrap">
     <h2 class="h2-center" style="margin-bottom:48px;">The questions you're already asking.</h2>
@@ -587,7 +498,7 @@
   </div>
 </section>
 
-<!-- ============ 13. OFFER + RISK REVERSAL ============ -->
+<!-- ============ 11. THE OFFER ============ -->
 <section class="offer" id="offer" aria-label="The offer">
   <div class="offer__wrap">
     <div class="offer__head">
@@ -617,7 +528,7 @@
   </div>
 </section>
 
-<!-- ============ 14. FINAL CTA ============ -->
+<!-- ============ 12. FINAL CTA ============ -->
 <section class="final" aria-label="Final call to action">
   <div class="final__wrap">
     <h2>Two versions of you, 28 days from now.</h2>
@@ -630,21 +541,6 @@
     <p class="final__foot">Ready is not a feeling. It's a decision. See you on Day 1.</p>
   </div>
 </section>
-
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="site-footer__inner">
-    <img src="assets/logo/wordmark.svg" height="26" alt="Treehouse" style="display:block;">
-    <nav>
-      <span>Tracks</span>
-      <span>Techdegree</span>
-      <span>Library</span>
-      <span>Community</span>
-      <span>Support</span>
-    </nav>
-    <div class="site-footer__copy">© 2026 Treehouse Island, Inc.</div>
-  </div>
-</footer>
 
 <script src="main.js"></script>
 </body>

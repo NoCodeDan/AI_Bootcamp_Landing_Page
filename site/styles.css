@@ -218,6 +218,17 @@ img { max-width: 100%; }
   background: #fff; border-radius: 12px; box-shadow: var(--shadow-card);
 }
 
+/* ---------- Program overview ---------- */
+.overview { padding: 96px 0; background: #fff; }
+.overview__stats {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  max-width: 960px; margin: 0 auto;
+}
+.ov-stat { background: var(--th-ink-100); border-radius: 12px; padding: 28px 24px; text-align: center; }
+.ov-stat__num { font-size: 32px; font-weight: 700; color: var(--th-green-700); line-height: 1; letter-spacing: -0.01em; }
+.ov-stat__num span { font-size: 17px; color: var(--th-ink-500); font-weight: 600; }
+.ov-stat__label { font-size: 14px; line-height: 1.5; color: var(--th-ink-700); margin-top: 10px; font-weight: 500; }
+
 /* ---------- The Enemy ---------- */
 .enemy { padding: 96px 0; background: var(--th-ink-100); }
 .enemy__narrow { max-width: 760px; margin: 0 auto; padding: 0 24px; }
@@ -455,10 +466,11 @@ img { max-width: 100%; }
   .cred__photo { max-width: 320px; }
   .how__cards { grid-template-columns: repeat(2, 1fr); }
   .learn__grid { grid-template-columns: repeat(2, 1fr); }
+  .overview__stats { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 720px) {
-  .section, .enemy, .mechanism, .who, .forme, .transform, .how, .timeline, .learn, .stack, .cred, .faq, .offer { padding: 64px 0; }
+  .section, .overview, .enemy, .mechanism, .who, .forme, .transform, .how, .timeline, .learn, .stack, .cred, .faq, .offer { padding: 64px 0; }
   .hero { padding: 48px 0 0; }
   .hero h1 { font-size: 36px; }
   .site-nav { display: none; }

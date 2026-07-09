@@ -3,29 +3,7 @@
   'use strict';
 
   /* ---------------------------------------------------------
-     1. Sticky CTA bar — slides in after ~12% scroll depth
-     --------------------------------------------------------- */
-  var stickyBar = document.getElementById('stickyBar');
-  if (stickyBar) {
-    var onScroll = function () {
-      var threshold = document.documentElement.scrollHeight * 0.12;
-      var scrolled = window.scrollY > Math.max(600, threshold);
-      if (scrolled) {
-        if (!stickyBar.classList.contains('is-visible')) {
-          stickyBar.hidden = false;
-          stickyBar.classList.add('is-visible');
-        }
-      } else if (stickyBar.classList.contains('is-visible')) {
-        stickyBar.classList.remove('is-visible');
-        stickyBar.hidden = true;
-      }
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-  }
-
-  /* ---------------------------------------------------------
-     2. 28-day strip — one solid color per week (weekends included)
+     1. 28-day strip — one solid color per week (weekends included)
      --------------------------------------------------------- */
   var weekColors = [
     { bg: '#1EA7FD', fg: '#FFFFFF' },
@@ -55,7 +33,7 @@
   }
 
   /* ---------------------------------------------------------
-     3. "Who this bootcamp is for" — expanding photo slider
+     2. "Who this bootcamp is for" — expanding photo slider
      --------------------------------------------------------- */
   var whoData = [
     { label: 'AI curious',    desc: 'Heard a lot about AI, touched very little of it. The perfect starting point.', src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80' },
