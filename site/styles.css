@@ -36,6 +36,12 @@
   --td-accent-orange:  linear-gradient(to bottom right, #f97316, #dc2626);
   --td-accent-amber:   linear-gradient(to bottom right, #f59e0b, #d97706);
 
+  /* Solid accent colors (gradient endpoints) for bullet marks */
+  --td-accent-blue-solid:    #0891b2;
+  --td-accent-green-solid:   #059669;
+  --td-accent-purple-solid:  #7c3aed;
+  --td-accent-magenta-solid: #db2777;
+
   /* Radius */
   --td-radius-card: 0.5rem;
   --td-radius-btn:  0.375rem;
@@ -212,16 +218,34 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .ov-stat__label { font-size: 0.875rem; line-height: 1.5; color: var(--td-text-muted); margin-top: 0.625rem; font-weight: 500; }
 
 /* =========================================================
-   Skills you'll master
+   What you walk away with (career-style cards)
    ========================================================= */
-.th-ai-bootcamp-2026 .learn { padding: 5rem 0; background: var(--td-bg-soft); }
-.th-ai-bootcamp-2026 .learn__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-.th-ai-bootcamp-2026 .learn-card { background: var(--td-bg); border: 1px solid var(--td-border); border-radius: var(--td-radius-card); padding: 1.5rem; box-shadow: var(--td-shadow-sm); }
-.th-ai-bootcamp-2026 .learn-card__title { font-weight: 700; font-size: 1.25rem; color: var(--td-text); margin-bottom: 0.5rem; }
-.th-ai-bootcamp-2026 .learn-card__body { font-size: 0.9375rem; line-height: 1.5; color: var(--td-text-muted); }
-.th-ai-bootcamp-2026 .learn-card--dark { background: var(--td-bg-dark); border: none; display: flex; flex-direction: column; justify-content: center; }
-.th-ai-bootcamp-2026 .learn-card--dark .learn-card__title { color: #fff; }
-.th-ai-bootcamp-2026 .learn-card--dark .learn-card__body { color: #cbd5e1; font-weight: 500; }
+.th-ai-bootcamp-2026 .career { padding: 5rem 0; background: var(--td-bg-soft); }
+.th-ai-bootcamp-2026 .career__cards { display: grid; gap: 1.5rem; }
+.th-ai-bootcamp-2026 .career-card { display: grid; grid-template-columns: 0.85fr 1.15fr; background: var(--td-bg); border: 1px solid var(--td-border); border-radius: var(--td-radius-card); overflow: hidden; box-shadow: var(--td-shadow-sm); }
+.th-ai-bootcamp-2026 .career-card__image { display: flex; align-items: center; justify-content: center; padding: 2.5rem; min-height: 14rem; }
+.th-ai-bootcamp-2026 .career-card__image svg { width: 4.5rem; height: 4.5rem; stroke: #fff; }
+.th-ai-bootcamp-2026 .career-card__text { padding: 2rem 2.25rem; }
+.th-ai-bootcamp-2026 .career-card__heading { display: flex; align-items: center; gap: 0.875rem; margin-bottom: 1.25rem; }
+.th-ai-bootcamp-2026 .career-card__heading-tile { width: 3rem; height: 3rem; border-radius: var(--td-radius-btn); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.th-ai-bootcamp-2026 .career-card__heading-tile svg { width: 1.5rem; height: 1.5rem; stroke: #fff; }
+.th-ai-bootcamp-2026 .career-card__heading h3 { font-size: 1.375rem; line-height: 1.2; }
+.th-ai-bootcamp-2026 .career-card__list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.875rem; }
+.th-ai-bootcamp-2026 .career-card__list li { display: flex; gap: 0.75rem; align-items: flex-start; }
+.th-ai-bootcamp-2026 .career-card__list li svg { width: 1.125rem; height: 1.125rem; flex-shrink: 0; margin-top: 0.2rem; }
+.th-ai-bootcamp-2026 .career-card__list p { font-size: 1rem; line-height: 1.5; color: var(--td-text-muted); margin: 0; }
+.th-ai-bootcamp-2026 .career-card--certificate .career-card__image,
+.th-ai-bootcamp-2026 .career-card--certificate .career-card__heading-tile { background: var(--td-accent-blue); }
+.th-ai-bootcamp-2026 .career-card--certificate .career-card__list li svg { stroke: var(--td-accent-blue-solid); }
+.th-ai-bootcamp-2026 .career-card--projects .career-card__image,
+.th-ai-bootcamp-2026 .career-card--projects .career-card__heading-tile { background: var(--td-accent-green); }
+.th-ai-bootcamp-2026 .career-card--projects .career-card__list li svg { stroke: var(--td-accent-green-solid); }
+.th-ai-bootcamp-2026 .career-card--skills .career-card__image,
+.th-ai-bootcamp-2026 .career-card--skills .career-card__heading-tile { background: var(--td-accent-purple); }
+.th-ai-bootcamp-2026 .career-card--skills .career-card__list li svg { stroke: var(--td-accent-purple-solid); }
+.th-ai-bootcamp-2026 .career-card--community .career-card__image,
+.th-ai-bootcamp-2026 .career-card--community .career-card__heading-tile { background: var(--td-accent-magenta); }
+.th-ai-bootcamp-2026 .career-card--community .career-card__list li svg { stroke: var(--td-accent-magenta-solid); }
 
 
 /* =========================================================
@@ -257,21 +281,6 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .track-card__cta { margin-top: 1.5rem; }
 .th-ai-bootcamp-2026 .btn-light { background: #fff; color: var(--td-text); }
 .th-ai-bootcamp-2026 .btn-light:hover { transform: scale(1.02); opacity: 0.92; }
-
-/* =========================================================
-   What you walk away with (stack)
-   ========================================================= */
-.th-ai-bootcamp-2026 .stack { padding: 5rem 0; background: var(--td-bg); }
-.th-ai-bootcamp-2026 .stack__grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: start; }
-.th-ai-bootcamp-2026 .stack__aside { position: sticky; top: 5rem; }
-.th-ai-bootcamp-2026 .stack__aside h2 { font-size: 2.25rem; line-height: 1.2; margin: 0.75rem 0 1.25rem; }
-.th-ai-bootcamp-2026 .stack__aside p { font-size: 1.125rem; line-height: 1.5; color: var(--td-text-muted); }
-.th-ai-bootcamp-2026 .stack__list { display: grid; gap: 1rem; }
-.th-ai-bootcamp-2026 .stack-item { border: 1px solid var(--td-border); border-radius: var(--td-radius-card); padding: 1.5rem 1.75rem; display: flex; gap: 1.125rem; align-items: flex-start; background: var(--td-bg); box-shadow: var(--td-shadow-sm); }
-.th-ai-bootcamp-2026 .stack-item--lead { background: var(--td-bg-soft); border-color: #bfdbfe; }
-.th-ai-bootcamp-2026 .stack-item__num { font-weight: 700; font-size: 0.875rem; color: #fff; background: var(--td-gradient); border-radius: var(--td-radius-btn); padding: 0.375rem 0.625rem; flex-shrink: 0; }
-.th-ai-bootcamp-2026 .stack-item__title { font-weight: 700; font-size: 1.0625rem; color: var(--td-text); margin-bottom: 0.25rem; }
-.th-ai-bootcamp-2026 .stack-item__body { font-size: 0.9375rem; line-height: 1.5; color: var(--td-text-muted); }
 
 /* =========================================================
    Who this is for (photo slider)
@@ -358,19 +367,15 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 @media (max-width: 1024px) {
   .th-ai-bootcamp-2026 .hero__grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .th-ai-bootcamp-2026 .hero__visual { min-height: 24rem; margin-top: 0.5rem; }
-  .th-ai-bootcamp-2026 .stack__grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .th-ai-bootcamp-2026 .stack__aside { position: static; }
   .th-ai-bootcamp-2026 .cred__grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .th-ai-bootcamp-2026 .cred__photo { max-width: 20rem; }
-  .th-ai-bootcamp-2026 .learn__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
   .th-ai-bootcamp-2026 .hero,
   .th-ai-bootcamp-2026 .overview,
-  .th-ai-bootcamp-2026 .learn,
+  .th-ai-bootcamp-2026 .career,
   .th-ai-bootcamp-2026 .timeline,
-  .th-ai-bootcamp-2026 .stack,
   .th-ai-bootcamp-2026 .who,
   .th-ai-bootcamp-2026 .cred,
   .th-ai-bootcamp-2026 .faq,
@@ -380,11 +385,13 @@ body.th-ai-bootcamp-2026 { margin: 0; }
   .th-ai-bootcamp-2026 .hero h1 { font-size: 2.25rem; }
   .th-ai-bootcamp-2026 .section-head h2,
   .th-ai-bootcamp-2026 .h2-center,
-  .th-ai-bootcamp-2026 .who__head h2,
-  .th-ai-bootcamp-2026 .stack__aside h2 { font-size: 1.875rem; }
+  .th-ai-bootcamp-2026 .who__head h2 { font-size: 1.875rem; }
   .th-ai-bootcamp-2026 .final h2 { font-size: 2rem; }
   .th-ai-bootcamp-2026 .offer__price { font-size: 1.875rem; }
-  .th-ai-bootcamp-2026 .learn__grid { grid-template-columns: 1fr; }
+  .th-ai-bootcamp-2026 .career-card { grid-template-columns: 1fr; }
+  .th-ai-bootcamp-2026 .career-card__image { min-height: 9rem; padding: 2rem; }
+  .th-ai-bootcamp-2026 .career-card__image svg { width: 3.5rem; height: 3.5rem; }
+  .th-ai-bootcamp-2026 .career-card__text { padding: 1.75rem; }
   .th-ai-bootcamp-2026 .overview__stats { grid-template-columns: repeat(2, 1fr); }
   .th-ai-bootcamp-2026 .tree__connector { display: none; }
   .th-ai-bootcamp-2026 .tree__branches { grid-template-columns: 1fr; gap: 1rem; margin-top: 1.5rem; }
