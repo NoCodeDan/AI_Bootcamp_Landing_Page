@@ -270,12 +270,12 @@ body.th-ai-bootcamp-2026 { margin: 0; }
    ========================================================= */
 .th-ai-bootcamp-2026 .timeline { padding: 5rem 0; background: var(--td-bg); }
 .th-ai-bootcamp-2026 .tree { margin-top: 0.5rem; }
-.th-ai-bootcamp-2026 .tree__trunk { display: flex; justify-content: center; }
-.th-ai-bootcamp-2026 .trunk-card { width: 100%; max-width: 47.5rem; background: var(--td-bg-dark); color: #fff; border-radius: var(--td-radius-card); padding: 2rem 2.25rem; box-shadow: var(--td-shadow-lg); }
-.th-ai-bootcamp-2026 .trunk-card__head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.875rem; flex-wrap: wrap; }
-.th-ai-bootcamp-2026 .trunk-card__days { font-size: 0.8125rem; font-weight: 600; color: #94a3b8; }
-.th-ai-bootcamp-2026 .trunk-card__title { font-size: 1.5rem; font-weight: 700; color: #fff; line-height: 1.25; margin-bottom: 0.75rem; }
-.th-ai-bootcamp-2026 .trunk-card__body { font-size: 0.9375rem; line-height: 1.5; color: #cbd5e1; margin: 0; }
+.th-ai-bootcamp-2026 .tree__track { display: flex; justify-content: center; }
+.th-ai-bootcamp-2026 .track-card { width: 100%; max-width: 47.5rem; background: var(--td-bg-dark); color: #fff; border-radius: var(--td-radius-card); padding: 2rem 2.25rem; box-shadow: var(--td-shadow-lg); }
+.th-ai-bootcamp-2026 .track-card__head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.875rem; flex-wrap: wrap; }
+.th-ai-bootcamp-2026 .track-card__days { font-size: 0.8125rem; font-weight: 600; color: #94a3b8; }
+.th-ai-bootcamp-2026 .track-card__title { font-size: 1.5rem; font-weight: 700; color: #fff; line-height: 1.25; margin-bottom: 0.75rem; }
+.th-ai-bootcamp-2026 .track-card__body { font-size: 0.9375rem; line-height: 1.5; color: #cbd5e1; margin: 0; }
 
 .th-ai-bootcamp-2026 .tree__connector { position: relative; height: 2.875rem; }
 .th-ai-bootcamp-2026 .tc-stem { position: absolute; left: 50%; top: 0; width: 2px; height: 1.4375rem; background: var(--td-border); transform: translateX(-50%); border-radius: 2px; }
@@ -432,8 +432,8 @@ body.th-ai-bootcamp-2026 { margin: 0; }
   .th-ai-bootcamp-2026 .overview__stats { grid-template-columns: repeat(2, 1fr); }
   .th-ai-bootcamp-2026 .tree__connector { display: none; }
   .th-ai-bootcamp-2026 .tree__branches { grid-template-columns: 1fr; gap: 1rem; margin-top: 1.5rem; }
-  .th-ai-bootcamp-2026 .trunk-card { padding: 1.75rem 1.5rem; }
-  .th-ai-bootcamp-2026 .trunk-card__title { font-size: 1.25rem; }
+  .th-ai-bootcamp-2026 .track-card { padding: 1.75rem 1.5rem; }
+  .th-ai-bootcamp-2026 .track-card__title { font-size: 1.25rem; }
   .th-ai-bootcamp-2026 .offer__box { padding: 2rem 1.5rem; }
   .th-ai-bootcamp-2026 .offer__guarantee { flex-direction: column; align-items: flex-start; }
   .th-ai-bootcamp-2026 .who__slider { height: auto; flex-direction: column; }
