@@ -83,17 +83,13 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 }
 .th-ai-bootcamp-2026 .eyebrow--on-dark { color: #7dd3fc; }
 
-/* Gradient text utilities */
-.th-ai-bootcamp-2026 .grad,
-.th-ai-bootcamp-2026 .grad-strong {
+/* Gradient text utility */
+.th-ai-bootcamp-2026 .grad {
   background: var(--td-gradient); -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent; color: transparent;
 }
-.th-ai-bootcamp-2026 .grad-strong { font-weight: 700; }
-.th-ai-bootcamp-2026 .text-strong { color: var(--td-text); font-weight: 600; }
 .th-ai-bootcamp-2026 .lede { font-size: 1.125rem; line-height: 1.5; color: var(--td-text-muted); margin: 0; }
 .th-ai-bootcamp-2026 .lede strong { color: var(--td-text); }
-.th-ai-bootcamp-2026 .panel-note { font-size: 0.9375rem; line-height: 1.5; color: var(--td-text-muted); margin: 1.5rem 0 0; font-weight: 500; }
 
 .th-ai-bootcamp-2026 .section-head { text-align: center; margin: 0 auto 3.5rem; }
 .th-ai-bootcamp-2026 .section-head h2 { font-size: 2.25rem; line-height: 1.2; margin: 0.75rem 0 1rem; }
@@ -216,38 +212,7 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .ov-stat__label { font-size: 0.875rem; line-height: 1.5; color: var(--td-text-muted); margin-top: 0.625rem; font-weight: 500; }
 
 /* =========================================================
-   The problem
-   ========================================================= */
-.th-ai-bootcamp-2026 .enemy { padding: 5rem 0; background: var(--td-bg-soft); }
-.th-ai-bootcamp-2026 .enemy__narrow { max-width: 48rem; margin: 0 auto; padding: 0 1.5rem; }
-.th-ai-bootcamp-2026 .enemy h2 { font-size: 2.25rem; line-height: 1.2; margin: 0.75rem 0 2.5rem; text-align: center; text-wrap: balance; }
-.th-ai-bootcamp-2026 .prose { font-size: 1.125rem; line-height: 1.5; color: var(--td-text-muted); display: grid; gap: 1.25rem; }
-.th-ai-bootcamp-2026 .enemy__cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 3rem 0; }
-.th-ai-bootcamp-2026 .pain-card { background: var(--td-bg); border: 1px solid var(--td-border); border-radius: var(--td-radius-card); padding: 1.5rem; box-shadow: var(--td-shadow-sm); }
-.th-ai-bootcamp-2026 .pain-card__title { font-weight: 700; font-size: 1rem; color: var(--td-text); margin-bottom: 0.5rem; }
-.th-ai-bootcamp-2026 .pain-card__body { font-size: 0.875rem; line-height: 1.5; color: var(--td-text-muted); }
-
-/* =========================================================
-   The builder's path (mechanism)
-   ========================================================= */
-.th-ai-bootcamp-2026 .mechanism { padding: 5rem 0; background: var(--td-bg); }
-.th-ai-bootcamp-2026 .mechanism__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
-.th-ai-bootcamp-2026 .mechanism h2 { font-size: 1.875rem; line-height: 1.2; margin: 0.75rem 0 1.5rem; text-wrap: balance; }
-.th-ai-bootcamp-2026 .mechanism__panel { background: var(--td-bg-tint); border: 1px solid var(--td-border); border-radius: var(--td-radius-card); padding: 2rem; }
-.th-ai-bootcamp-2026 .ladder { display: grid; gap: 1rem; }
-.th-ai-bootcamp-2026 .rung { background: var(--td-bg); border: 1px solid var(--td-border); border-radius: var(--td-radius-card); padding: 1.25rem 1.5rem; box-shadow: var(--td-shadow-sm); display: flex; gap: 1rem; align-items: flex-start; }
-.th-ai-bootcamp-2026 .rung--blue  { border-left: 4px solid #3b82f6; }
-.th-ai-bootcamp-2026 .rung--amber { border-left: 4px solid #f59e0b; }
-.th-ai-bootcamp-2026 .rung--green { border-left: 4px solid #22c55e; }
-.th-ai-bootcamp-2026 .rung__num { width: 2.5rem; height: 2.5rem; border-radius: var(--td-radius-btn); font-weight: 700; font-size: 1.0625rem; color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.th-ai-bootcamp-2026 .rung__num--blue  { background: var(--td-accent-blue); }
-.th-ai-bootcamp-2026 .rung__num--amber { background: var(--td-accent-amber); }
-.th-ai-bootcamp-2026 .rung__num--green { background: var(--td-accent-green); }
-.th-ai-bootcamp-2026 .rung__title { font-weight: 700; font-size: 1.0625rem; color: var(--td-text); margin-bottom: 0.25rem; }
-.th-ai-bootcamp-2026 .rung__body { font-size: 0.875rem; line-height: 1.5; color: var(--td-text-muted); }
-
-/* =========================================================
-   Skills you'll master + how it works (merged)
+   Skills you'll master
    ========================================================= */
 .th-ai-bootcamp-2026 .learn { padding: 5rem 0; background: var(--td-bg-soft); }
 .th-ai-bootcamp-2026 .learn__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
@@ -258,12 +223,6 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .learn-card--dark .learn-card__title { color: #fff; }
 .th-ai-bootcamp-2026 .learn-card--dark .learn-card__body { color: #cbd5e1; font-weight: 500; }
 
-.th-ai-bootcamp-2026 .how__cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
-.th-ai-bootcamp-2026 .how-card { background: var(--td-bg); border: 1px solid var(--td-border); border-radius: var(--td-radius-card); padding: 1.75rem 1.5rem; box-shadow: var(--td-shadow-sm); }
-.th-ai-bootcamp-2026 .how-card__title { font-weight: 700; font-size: 1.0625rem; color: var(--td-text); margin-bottom: 0.375rem; }
-.th-ai-bootcamp-2026 .how-card__body { font-size: 0.875rem; line-height: 1.5; color: var(--td-text-muted); }
-.th-ai-bootcamp-2026 .how__foot { max-width: 45rem; margin: 0 auto; text-align: center; }
-.th-ai-bootcamp-2026 .how__foot p { font-size: 1.0625rem; line-height: 1.5; color: var(--td-text-muted); }
 
 /* =========================================================
    Timeline tree
@@ -399,20 +358,16 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 @media (max-width: 1024px) {
   .th-ai-bootcamp-2026 .hero__grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .th-ai-bootcamp-2026 .hero__visual { min-height: 24rem; margin-top: 0.5rem; }
-  .th-ai-bootcamp-2026 .mechanism__grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .th-ai-bootcamp-2026 .stack__grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .th-ai-bootcamp-2026 .stack__aside { position: static; }
   .th-ai-bootcamp-2026 .cred__grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .th-ai-bootcamp-2026 .cred__photo { max-width: 20rem; }
-  .th-ai-bootcamp-2026 .how__cards { grid-template-columns: repeat(2, 1fr); }
   .th-ai-bootcamp-2026 .learn__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
   .th-ai-bootcamp-2026 .hero,
   .th-ai-bootcamp-2026 .overview,
-  .th-ai-bootcamp-2026 .enemy,
-  .th-ai-bootcamp-2026 .mechanism,
   .th-ai-bootcamp-2026 .learn,
   .th-ai-bootcamp-2026 .timeline,
   .th-ai-bootcamp-2026 .stack,
@@ -425,13 +380,10 @@ body.th-ai-bootcamp-2026 { margin: 0; }
   .th-ai-bootcamp-2026 .hero h1 { font-size: 2.25rem; }
   .th-ai-bootcamp-2026 .section-head h2,
   .th-ai-bootcamp-2026 .h2-center,
-  .th-ai-bootcamp-2026 .enemy h2,
   .th-ai-bootcamp-2026 .who__head h2,
   .th-ai-bootcamp-2026 .stack__aside h2 { font-size: 1.875rem; }
   .th-ai-bootcamp-2026 .final h2 { font-size: 2rem; }
   .th-ai-bootcamp-2026 .offer__price { font-size: 1.875rem; }
-  .th-ai-bootcamp-2026 .enemy__cards { grid-template-columns: 1fr; }
-  .th-ai-bootcamp-2026 .how__cards { grid-template-columns: 1fr; }
   .th-ai-bootcamp-2026 .learn__grid { grid-template-columns: 1fr; }
   .th-ai-bootcamp-2026 .overview__stats { grid-template-columns: repeat(2, 1fr); }
   .th-ai-bootcamp-2026 .tree__connector { display: none; }
