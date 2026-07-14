@@ -317,7 +317,8 @@ body.th-ai-bootcamp-2026 { margin: 0; }
    ========================================================= */
 .th-ai-bootcamp-2026 .cred { padding: 5rem 0; background: var(--td-bg-dark); }
 .th-ai-bootcamp-2026 .cred__grid { display: grid; grid-template-columns: 20rem 1fr; gap: 4rem; align-items: center; }
-.th-ai-bootcamp-2026 .cred__photo { width: 100%; aspect-ratio: 1; border-radius: var(--td-radius-card); background: var(--td-gradient); display: flex; align-items: center; justify-content: center; }
+.th-ai-bootcamp-2026 .cred__photo { width: 100%; aspect-ratio: 1; border-radius: var(--td-radius-card); background: transparent; display: flex; align-items: center; justify-content: center; }
+.th-ai-bootcamp-2026 .cred__logo { width: 55%; height: auto; fill: #5FCF80; }
 .th-ai-bootcamp-2026 .cred h2 { font-size: 1.875rem; line-height: 1.2; color: #fff; margin: 0.75rem 0 1.25rem; }
 .th-ai-bootcamp-2026 .cred p { font-size: 1.0625rem; line-height: 1.5; color: #cbd5e1; font-weight: 500; margin: 0 0 1rem; }
 .th-ai-bootcamp-2026 .cred p strong { color: #fff; }
