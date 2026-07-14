@@ -38,10 +38,10 @@
   --td-accent-amber:   linear-gradient(to bottom right, #f59e0b, #d97706);
 
   /* Solid accent colors (gradient endpoints) for bullet marks */
-  --td-accent-blue-solid:    #0891b2;
-  --td-accent-green-solid:   #059669;
+  --td-accent-blue-solid:    #0e7490;
+  --td-accent-green-solid:   #047857;
   --td-accent-purple-solid:  #7c3aed;
-  --td-accent-magenta-solid: #db2777;
+  --td-accent-magenta-solid: #c81e67;
 
   /* Radius */
   --td-radius-card: 0.5rem;
@@ -119,6 +119,12 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .btn-ghost:hover { background: #f1f5f9; transform: scale(1.02); }
 .th-ai-bootcamp-2026 .btn-lg { font-size: 1.0625rem; min-height: 52px; padding: 0 2rem; }
 
+/* Visible focus indicator (WCAG 2.4.7) */
+.th-ai-bootcamp-2026 a:focus-visible,
+.th-ai-bootcamp-2026 button:focus-visible,
+.th-ai-bootcamp-2026 summary:focus-visible,
+.th-ai-bootcamp-2026 [tabindex]:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
+
 /* ---------- Tags / pills ---------- */
 .th-ai-bootcamp-2026 .tag {
   display: inline-block; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.02em;
@@ -156,7 +162,7 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .hero__ctas { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
 .th-ai-bootcamp-2026 .hero__proof { display: flex; gap: 1.25rem; margin-top: 1.75rem; font-size: 0.875rem; color: var(--td-text-muted); flex-wrap: wrap; }
 .th-ai-bootcamp-2026 .proof-item { display: flex; align-items: center; gap: 0.375rem; }
-.th-ai-bootcamp-2026 .proof-item svg { stroke: #059669; width: 1rem; height: 1rem; }
+.th-ai-bootcamp-2026 .proof-item svg { stroke: #047857; width: 1rem; height: 1rem; }
 
 .th-ai-bootcamp-2026 .hero__visual { position: relative; min-height: 28rem; }
 .th-ai-bootcamp-2026 .hero-app {
