@@ -13,7 +13,7 @@
 
   /* Text */
   --td-text:        #020817; /* headings / near-black */
-  --td-text-muted:  #64748b; /* body / muted (slate-500) */
+  --td-text-muted:  #5b6a7f; /* body / muted (slate-500, darkened for WCAG AA on tinted bg) */
   --td-text-soft:   #0f172a;
 
   /* Brand blue (secondary buttons, breadcrumbs, progress bars) */
@@ -189,7 +189,7 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 }
 .th-ai-bootcamp-2026 .hero-chat__eyebrow { font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #7dd3fc; margin-bottom: 0.625rem; }
 .th-ai-bootcamp-2026 .hero-chat__prompt { font-size: 0.8125rem; line-height: 1.5; color: #e2e8f0; }
-.th-ai-bootcamp-2026 .hero-chat__meta { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.75rem; font-size: 0.75rem; color: #94a3b8; font-weight: 600; }
+.th-ai-bootcamp-2026 .hero-chat__meta { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.75rem; font-size: 0.75rem; color: #bcc6d3; font-weight: 600; }
 
 .th-ai-bootcamp-2026 .hero-badge {
   position: absolute; top: 52%; left: -0.5rem; background: var(--td-bg); padding: 0.75rem 1rem;
@@ -258,7 +258,7 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .tree__track { display: flex; justify-content: center; }
 .th-ai-bootcamp-2026 .track-card { width: 100%; max-width: 47.5rem; background: var(--td-bg-dark); color: #fff; border-radius: var(--td-radius-card); padding: 2rem 2.25rem; box-shadow: var(--td-shadow-lg); }
 .th-ai-bootcamp-2026 .track-card__head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.875rem; flex-wrap: wrap; }
-.th-ai-bootcamp-2026 .track-card__days { font-size: 0.8125rem; font-weight: 600; color: #94a3b8; }
+.th-ai-bootcamp-2026 .track-card__days { font-size: 0.8125rem; font-weight: 600; color: #bcc6d3; }
 .th-ai-bootcamp-2026 .track-card__title { font-size: 1.5rem; font-weight: 700; color: #fff; line-height: 1.25; margin-bottom: 0.75rem; }
 .th-ai-bootcamp-2026 .track-card__body { font-size: 0.9375rem; line-height: 1.5; color: #cbd5e1; margin: 0; }
 
@@ -317,7 +317,7 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .cred p strong { color: #fff; }
 .th-ai-bootcamp-2026 .cred__stats { display: flex; gap: 2rem; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1.5rem; margin-top: 0.75rem; }
 .th-ai-bootcamp-2026 .cred-stat__num { font-size: 1.75rem; font-weight: 700; color: #7dd3fc; line-height: 1; }
-.th-ai-bootcamp-2026 .cred-stat__label { font-size: 0.8125rem; color: #94a3b8; margin-top: 0.375rem; font-weight: 600; }
+.th-ai-bootcamp-2026 .cred-stat__label { font-size: 0.8125rem; color: #bcc6d3; margin-top: 0.375rem; font-weight: 600; }
 
 /* =========================================================
    FAQ
@@ -362,8 +362,8 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .final__eyebrow svg { width: 1.125rem; height: 1.125rem; color: #e879f9; }
 .th-ai-bootcamp-2026 .final h2 { font-size: 2.75rem; line-height: 1.15; color: #fff; margin: 0 0 1.25rem; text-wrap: balance; }
 .th-ai-bootcamp-2026 .final__lead { font-size: 1.25rem; line-height: 1.6; color: #cbd5e1; font-weight: 500; max-width: 40rem; margin: 0 auto 2.5rem; }
-.th-ai-bootcamp-2026 .final__foot { font-size: 0.9375rem; color: #94a3b8; margin: 1.5rem 0 0; font-weight: 600; }
-.th-ai-bootcamp-2026 .final__back { display: inline-flex; align-items: center; gap: 0.375rem; margin-top: 1.5rem; color: #94a3b8; font-weight: 600; font-size: 0.9375rem; text-decoration: none; transition: var(--td-ease); }
+.th-ai-bootcamp-2026 .final__foot { font-size: 0.9375rem; color: #bcc6d3; margin: 1.5rem 0 0; font-weight: 600; }
+.th-ai-bootcamp-2026 .final__back { display: inline-flex; align-items: center; gap: 0.375rem; margin-top: 1.5rem; color: #bcc6d3; font-weight: 600; font-size: 0.9375rem; text-decoration: none; transition: var(--td-ease); }
 .th-ai-bootcamp-2026 .final__back:hover { color: #e2e8f0; }
 
 /* =========================================================
