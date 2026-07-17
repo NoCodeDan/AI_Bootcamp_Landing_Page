@@ -220,7 +220,7 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .overview { padding: 5rem 0; background: var(--td-bg-soft); }
 .th-ai-bootcamp-2026 .overview__stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 60rem; margin: 0 auto; }
 .th-ai-bootcamp-2026 .ov-stat { background: var(--td-bg-tint); border: 1px solid var(--td-border); border-radius: var(--td-radius-card); padding: 1.75rem 1.5rem; text-align: center; box-shadow: var(--td-shadow-sm); }
-.th-ai-bootcamp-2026 .ov-stat__num { font-size: 2rem; font-weight: 700; line-height: 1; color: var(--td-text); letter-spacing: -0.01em; }
+.th-ai-bootcamp-2026 .ov-stat__num { font-size: 2rem; font-weight: 700; line-height: 1.15; color: var(--td-text); letter-spacing: -0.01em; min-height: 2.3em; display: flex; align-items: center; justify-content: center; }
 .th-ai-bootcamp-2026 .ov-stat__num span { font-size: 1.0625rem; color: var(--td-text-muted); font-weight: 600; }
 .th-ai-bootcamp-2026 .ov-stat__label { font-size: 0.875rem; line-height: 1.5; color: var(--td-text-muted); margin-top: 0.625rem; font-weight: 500; }
 
