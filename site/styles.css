@@ -266,7 +266,7 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .track-card__head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.875rem; flex-wrap: wrap; }
 .th-ai-bootcamp-2026 .track-card__days { font-size: 0.8125rem; font-weight: 600; color: #bcc6d3; }
 .th-ai-bootcamp-2026 .track-card__title { font-size: 1.5rem; font-weight: 700; color: #fff; line-height: 1.25; margin-bottom: 0.75rem; }
-.th-ai-bootcamp-2026 .track-card__body { font-size: 0.9375rem; line-height: 1.5; color: #cbd5e1; margin: 0; }
+.th-ai-bootcamp-2026 .track-card__body { font-size: 1rem; line-height: 1.6; color: #cbd5e1; margin: 0; }
 
 .th-ai-bootcamp-2026 .tree__connector { position: relative; height: 2.875rem; }
 .th-ai-bootcamp-2026 .tc-stem { position: absolute; left: 50%; top: 0; width: 2px; height: 1.4375rem; background: var(--td-border); transform: translateX(-50%); border-radius: 2px; }
