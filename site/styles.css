@@ -253,9 +253,6 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .career-card--skills .career-card__image,
 .th-ai-bootcamp-2026 .career-card--skills .career-card__heading-tile { background: var(--td-accent-purple); }
 .th-ai-bootcamp-2026 .career-card--skills .career-card__list li svg { stroke: var(--td-accent-purple-solid); }
-.th-ai-bootcamp-2026 .career-card--community .career-card__image,
-.th-ai-bootcamp-2026 .career-card--community .career-card__heading-tile { background: var(--td-accent-magenta); }
-.th-ai-bootcamp-2026 .career-card--community .career-card__list li svg { stroke: var(--td-accent-magenta-solid); }
 
 
 /* =========================================================
