@@ -281,11 +281,12 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .branch-card:hover { transform: scale(1.02); box-shadow: var(--td-shadow-lg); }
 .th-ai-bootcamp-2026 .branch-card__eyebrow { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--td-blue); margin: 0; }
 .th-ai-bootcamp-2026 .branch-card__title { font-size: 1.375rem; font-weight: 700; color: var(--td-text); margin-top: 0.25rem; line-height: 1.2; }
-.th-ai-bootcamp-2026 .branch-card__list { list-style: none; padding: 0; margin: 1.125rem 0 0; display: grid; gap: 0.75rem; }
+.th-ai-bootcamp-2026 .branch-card__list { list-style: none; padding: 0; margin: 0.625rem 0 1.25rem; display: grid; gap: 0.75rem; }
 .th-ai-bootcamp-2026 .branch-card__list li { position: relative; padding-left: 1.25rem; font-size: 0.875rem; line-height: 1.5; color: var(--td-text-muted); }
 .th-ai-bootcamp-2026 .branch-card__list li::before { content: ''; position: absolute; left: 0; top: 0.5rem; width: 7px; height: 7px; border-radius: 2px; background: var(--td-blue); }
-.th-ai-bootcamp-2026 .branch-card__foot { margin-top: auto; padding-top: 1.125rem; border-top: 1px solid var(--td-border); font-size: 0.875rem; font-weight: 600; color: var(--td-text); line-height: 1.5; }
-.th-ai-bootcamp-2026 .card-cta { margin-top: 1.25rem; width: 100%; white-space: normal; text-align: center; line-height: 1.3; padding: 0.75rem 1.25rem; }
+.th-ai-bootcamp-2026 .branch-card__desc { margin-top: 0.625rem; font-size: 1rem; line-height: 1.5; color: var(--td-text); font-weight: 500; }
+.th-ai-bootcamp-2026 .branch-card__list-label { margin-top: 1.25rem; font-size: 0.9375rem; font-weight: 700; color: var(--td-text); }
+.th-ai-bootcamp-2026 .card-cta { margin-top: auto; width: 100%; white-space: normal; text-align: center; line-height: 1.3; padding: 0.75rem 1.25rem; }
 .th-ai-bootcamp-2026 .track-card__cta { margin-top: 1.5rem; }
 .th-ai-bootcamp-2026 .btn-light { background: #fff; color: var(--td-text); }
 .th-ai-bootcamp-2026 .btn-light:hover { transform: scale(1.02); opacity: 0.92; }
