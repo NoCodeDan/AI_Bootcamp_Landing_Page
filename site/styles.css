@@ -315,8 +315,9 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 /* Who: mobile carousel (Slick, active < 767px only) */
 .th-ai-bootcamp-2026 .who .slick-slide { margin: 0 4px; }
 .th-ai-bootcamp-2026 .who .slick-list { margin: 0 -4px; }
-.th-ai-bootcamp-2026 .who__slider.slick-initialized { display: block; height: auto; margin-bottom: 3.25rem; }
-.th-ai-bootcamp-2026 .who__slider.slick-initialized .who-card { height: 20rem; min-width: 0; }
+.th-ai-bootcamp-2026 .who__slider.slick-initialized { display: block; height: auto; max-width: 26rem; margin: 0 auto 3.25rem; }
+.th-ai-bootcamp-2026 .who__slider.slick-initialized .who-card { height: 30rem; min-width: 0; }
+.th-ai-bootcamp-2026 .who__slider.slick-initialized .who-card__img { object-position: center top; }
 .th-ai-bootcamp-2026 .who__slider.slick-initialized .who-card__desc { display: block; }
 .th-ai-bootcamp-2026 .who__slider.slick-initialized .who-card__accent { background: var(--td-gradient); }
 .th-ai-bootcamp-2026 .who__slider.slick-initialized .who-card__label { font-size: 1.375rem; }
