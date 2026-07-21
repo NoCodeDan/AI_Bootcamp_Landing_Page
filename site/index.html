@@ -68,7 +68,7 @@
   </div>
 
   <div class="trust-strip">
-    <span>Trusted by career-changers since 2011</span>
+    <span>Helping beginners build since 2011</span>
     <span>1.2M+ learners worldwide</span>
     <span>Built by educators who made this exact leap</span>
   </div>
@@ -205,10 +205,10 @@
         <div class="career-card__text">
           <div class="career-card__heading">
             <div class="career-card__heading-tile"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 7 L20 12 C20 16.5 16.5 20.3 12 21 C7.5 20.3 4 16.5 4 12 L4 7 Z"></path><path d="M9 12 L11 14 L15 10"></path></svg></div>
-            <h3>Certificate of completion</h3>
+            <h3>Certificate of achievement</h3>
           </div>
           <ul class="career-card__list">
-            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Earn a recognized certificate of completion on Day 28, backed by everything you built.</p></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Earn a recognized certificate of achievement on Day 28, backed by everything you built.</p></li>
             <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Add it to your resume and LinkedIn to show you can build with AI.</p></li>
             <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Stand out as someone who ships real projects, not just talks about AI.</p></li>
           </ul>
@@ -257,7 +257,43 @@
       <div class="who__rule"></div>
     </div>
     <div class="who__slider" id="whoSlider">
-      <!-- cards injected/enhanced by main.js; static markup ensures no-JS fallback -->
+      <!-- Static cards below are the no-JS fallback; main.js clears and rebuilds them as the interactive slider. Keep this list in sync with whoData in main.js. -->
+      <div class="who-card is-active">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="AI curious" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">AI curious</div><div class="who-card__desc">Heard a lot about AI, touched very little of it. The perfect starting point.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
+      <div class="who-card">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" alt="Career focused" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">Career focused</div><div class="who-card__desc">Adding real AI skills to your resume and your day job.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
+      <div class="who-card">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Generalists" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">Generalists</div><div class="who-card__desc">Good at many things, ready to build with all of them.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
+      <div class="who-card">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&crop=faces&w=900&h=1200&q=80" alt="Indie hackers" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">Indie hackers</div><div class="who-card__desc">That side project idea has been waiting for exactly this.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
+      <div class="who-card">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80" alt="Creatives" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">Creatives</div><div class="who-card__desc">Designers, writers, and makers who want working prototypes.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
+      <div class="who-card">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80" alt="You!" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">You!</div><div class="who-card__desc">Whether you're technical or not, if you want to build, this is for you.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
     </div>
     <p class="who__foot">Whether you're technical or not, if you want to build, this is for you.</p>
   </div>
@@ -317,7 +353,7 @@
       </details>
       <details>
         <summary>Do I need to pay for AI tools?</summary>
-        <p>You can begin on the free plans of the tools we use. A few of the builder tools introduced in weeks 3–4, such as Cursor and Claude Code, offer more on a paid plan — and we'll explain exactly when an upgrade is worthwhile so you can decide for yourself.</p>
+        <p>You can begin on the free plans of the tools we use. A few of the builder tools introduced in weeks 3-4, such as Cursor and Claude Code, offer more on a paid plan — and we'll explain exactly when an upgrade is worthwhile so you can decide for yourself.</p>
       </details>
       <details>
         <summary>How do I start?</summary>

@@ -15,6 +15,8 @@
   ];
   var slider = document.getElementById('whoSlider');
   if (slider) {
+    // Remove the static no-JS fallback cards before building the interactive slider.
+    slider.innerHTML = '';
     var cards = whoData.map(function (d, idx) {
       var card = document.createElement('div');
       card.className = 'who-card' + (idx === 0 ? ' is-active' : '');

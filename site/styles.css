@@ -438,4 +438,13 @@ body.th-ai-bootcamp-2026 { margin: 0; }
   .th-ai-bootcamp-2026 .who__slider { height: auto; flex-direction: column; }
   .th-ai-bootcamp-2026 .who-card { min-width: 0; height: 6rem; }
   .th-ai-bootcamp-2026 .who-card.is-active { flex: none; min-width: 0; height: 17.5rem; }
+  /* Hero visual: stack the layered cards vertically on mobile. The badge sits
+     at a fixed height while the chat card grows upward as its text wraps, so on
+     narrow screens the two can overlap; stacking removes that risk entirely and
+     keeps the full app card on-screen instead of clipping its right edge. */
+  .th-ai-bootcamp-2026 .hero__visual { position: static; min-width: 0; min-height: 0; display: flex; flex-direction: column; gap: 1rem; max-width: 28rem; margin-top: 1rem; }
+  .th-ai-bootcamp-2026 .hero-app,
+  .th-ai-bootcamp-2026 .hero-chat { position: static; width: 100%; max-width: 100%; min-width: 0; }
+  .th-ai-bootcamp-2026 .hero-app__stats { gap: 0.5rem; }
+  .th-ai-bootcamp-2026 .hero-badge { position: static; width: auto; align-self: flex-start; }
 }
