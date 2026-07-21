@@ -447,4 +447,7 @@ body.th-ai-bootcamp-2026 { margin: 0; }
   .th-ai-bootcamp-2026 .hero-chat { position: static; width: 100%; max-width: 100%; min-width: 0; }
   .th-ai-bootcamp-2026 .hero-app__stats { gap: 0.5rem; }
   .th-ai-bootcamp-2026 .hero-badge { position: static; width: auto; align-self: flex-start; }
+  /* Stack order: app card, then the "Wait, YOU made this?" badge, then the prompt card. */
+  .th-ai-bootcamp-2026 .hero-badge { order: 1; }
+  .th-ai-bootcamp-2026 .hero-chat { order: 2; }
 }
