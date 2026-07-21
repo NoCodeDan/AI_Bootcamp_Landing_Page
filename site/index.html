@@ -6,53 +6,25 @@
 <title>Treehouse 28-Day AI Bootcamp</title>
 <meta name="description" content="A 28-day guided bootcamp from Treehouse. Build a real AI agent, web app, or data dashboard in 28 days. No code, no experience required. Included with any paid Treehouse plan.">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
-<body>
-
-<!-- ============ STICKY BAR (appears on scroll) ============ -->
-<div class="sticky-bar" id="stickyBar" hidden>
-  <div class="sticky-bar__inner">
-    <div class="sticky-bar__left">
-      <img src="assets/logo/mark.svg" width="26" height="26" alt="">
-      <span class="sticky-bar__text">28-Day AI Bootcamp · Included with membership · Start anytime</span>
-    </div>
-    <a href="#offer" class="btn btn-primary" style="font-size:15px; padding:10px 20px;">Start Building →</a>
-  </div>
-</div>
-
-<!-- ============ SITE HEADER ============ -->
-<header class="site-header">
-  <div class="site-header__inner">
-    <img src="assets/logo/wordmark.svg" height="30" alt="Treehouse" style="display:block; flex-shrink:0;">
-    <nav class="site-nav">
-      <span>Tracks</span>
-      <span>Techdegree</span>
-      <span class="site-nav__active">AI Bootcamp <span class="tag tag-new">New</span></span>
-      <span>Library</span>
-      <span>Pricing</span>
-    </nav>
-    <div class="site-header__right">
-      <span class="site-header__signin">Sign in</span>
-      <a href="#offer" class="btn btn-primary">Start Building</a>
-    </div>
-  </div>
-</header>
+<body class="th-ai-bootcamp-2026">
 
 <!-- ============ 1. HERO ============ -->
 <section class="hero" aria-label="Hero">
   <div class="hero__grid">
     <div>
-      <div class="eyebrow eyebrow--green">A 28-day guided bootcamp from Treehouse</div>
-      <h1>Go from <span style="color:#2E8B57;">&ldquo;I don't get AI&rdquo;</span> to shipping your first AI-built product in 28 days.</h1>
-      <p class="hero__sub">One hour a day. Watch a series of short videos, then hands-on practice. By Day 28 you'll have built an AI agent, a web app, or a data dashboard, with a live link you can share with anyone.</p>
+      <div class="eyebrow eyebrow--green">AI Bootcamp</div>
+      <h1>Build and ship your first <span class="grad">AI product</span> in 28 days.</h1>
+      <p class="hero__sub">Follow a guided, day-by-day path and finish with a real AI product that's live and yours to share.</p>
       <div class="hero__ctas">
-        <a href="#offer" class="btn btn-primary btn-lg">Start Building →</a>
+        <a href="https://teamtreehouse.com/subscribe/new?trial=yes" class="btn btn-primary btn-lg">Start Building →</a>
         <a href="#timeline" class="btn btn-ghost">See the full 28-day schedule</a>
       </div>
       <div class="hero__proof">
-        <span class="proof-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg> 1 hour a day</span>
-        <span class="proof-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg> Included in any paid Treehouse plan</span>
-        <span class="proof-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg> Day 1 assumes nothing</span>
+        <span class="proof-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg> A new lesson every day</span>
+        <span class="proof-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg> Included in any paid Treehouse plan</span>
+        <span class="proof-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg> Day 1 assumes nothing</span>
       </div>
     </div>
 
@@ -60,20 +32,19 @@
     <div class="hero__visual">
       <div class="hero-app">
         <div class="hero-app__bar">
-          <span class="dot" style="background:#FF6B5B;"></span>
-          <span class="dot" style="background:#FFD23F;"></span>
-          <span class="dot" style="background:#5FCF80;"></span>
-          <span class="hero-app__url">plantpal.lovable.app</span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="hero-app__url">plantpal.app</span>
         </div>
         <div class="hero-app__body">
           <div class="hero-app__head">
             <div class="hero-app__title">🌱 PlantPal</div>
-            <span class="tag tag-rec">Built on Day 21</span>
           </div>
           <div class="hero-app__stats">
-            <div class="stat" style="background:#E8F7EE;"><div class="stat__num" style="color:#2E8B57;">12</div><div class="stat__label">Plants tracked</div></div>
-            <div class="stat" style="background:#E6F4FD;"><div class="stat__num" style="color:#0C7CD5;">3</div><div class="stat__label">Need water</div></div>
-            <div class="stat" style="background:#FFF3D0;"><div class="stat__num" style="color:#8A6200;">98%</div><div class="stat__label">Alive rate</div></div>
+            <div class="stat"><div class="stat__num grad">12</div><div class="stat__label">Plants tracked</div></div>
+            <div class="stat"><div class="stat__num grad">3</div><div class="stat__label">Need water</div></div>
+            <div class="stat"><div class="stat__num grad">98%</div><div class="stat__label">Alive rate</div></div>
           </div>
           <div class="hero-app__progress"><div></div></div>
         </div>
@@ -81,11 +52,11 @@
       <div class="hero-chat">
         <div class="hero-chat__eyebrow">The prompt that built it</div>
         <div class="hero-chat__prompt">Build a plant care tracker with watering reminders and a health dashboard…</div>
-        <div class="hero-chat__meta"><span class="dot" style="background:#5FCF80; width:8px; height:8px;"></span> Deployed · Day 24</div>
+        <div class="hero-chat__meta"><span class="dot dot--status"></span> Deployed · Day 28</div>
       </div>
       <div class="hero-badge">
         <div class="hero-badge__icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3 L19 12 L5 21 Z"></path></svg>
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3 L19 12 L5 21 Z"></path></svg>
         </div>
         <div style="line-height:1.25;">
           <div class="hero-badge__q">&ldquo;Wait, YOU made this?&rdquo;</div>
@@ -96,95 +67,188 @@
   </div>
 
   <div class="trust-strip">
-    <span>Trusted by career-changers since 2011</span>
-    <span>220k+ certificates earned</span>
+    <span>Helping beginners build since 2011</span>
+    <span>1.2M+ learners worldwide</span>
     <span>Built by educators who made this exact leap</span>
   </div>
 </section>
 
-<!-- ============ 2. THE ENEMY ============ -->
-<section class="enemy" aria-label="The problem">
-  <div class="enemy__narrow">
-    <div class="eyebrow" style="text-align:center;">The real gap</div>
-    <h2>The problem isn't AI. It's the sideline.</h2>
-    <div class="prose">
-      <p>Every day there's a new headline. A new model. A new &ldquo;everything just changed.&rdquo;</p>
-      <p>And if you're honest, it doesn't make you curious. It makes you nervous. Everyone else seems to get this. You're not sure you ever will. And underneath it all, a quiet question: what does this mean for me?</p>
-      <p>So you close the tab. Change the subject. Hope it all settles down before you have to deal with it.</p>
-      <p style="font-weight:600; color:#1B2733;">That's the sideline. It's comfortable. It's also where careers stall.</p>
-    </div>
-    <div class="enemy__cards">
-      <div class="pain-card">
-        <div class="pain-card__title">It moves too fast</div>
-        <div class="pain-card__body">By the time you've heard of one tool, three new ones exist. Nobody keeps up with all of it. Nobody has to.</div>
-      </div>
-      <div class="pain-card">
-        <div class="pain-card__title">It feels like it's not for you</div>
-        <div class="pain-card__body">The people talking about AI seem to speak a different language. They all started somewhere too.</div>
-      </div>
-      <div class="pain-card">
-        <div class="pain-card__title">&ldquo;I'm not a computer person&rdquo;</div>
-        <div class="pain-card__body">An identity, not a fact. And it expires the day you build something.</div>
-      </div>
-    </div>
-    <div class="prose">
-      <p>Here's what nobody tells you: the gap between the people who feel nervous about AI and the people who build with it is not talent. It's not a computer science degree. It's a system, taken one small, safe step at a time. One tool a day, with a patient guide showing you exactly what to do.</p>
-      <p style="font-weight:700; color:#2E8B57;">We mapped that path. It takes 28 days to walk it.</p>
-    </div>
-    <div style="text-align:center; margin-top:40px;">
-      <a href="#offer" class="btn btn-primary btn-lg">Start Building →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 3. EPIPHANY / MECHANISM ============ -->
-<section class="mechanism" aria-label="The Builder's Path">
+<!-- ============ 2. PROGRAM OVERVIEW ============ -->
+<section class="overview" aria-label="Program overview">
   <div class="container">
-    <div class="mechanism__grid">
-      <div>
-        <div class="eyebrow eyebrow--green">From Treehouse</div>
-        <h2>We teach people who weren't supposed to be able to build software.</h2>
-        <div class="prose" style="font-size:17px;">
-          <p>We've been doing it since 2011.</p>
-          <p>Marketers, teachers, nurses, retail managers. People with no engineering background and no computer science degree. Treehouse has spent fifteen years turning complete beginners into builders, one short video and one hands-on step at a time.</p>
-          <p>Then AI changed the rules. The barrier to building dropped to nearly zero. And the anxiety about &ldquo;keeping up&rdquo; went through the roof. People had more power available to them than ever, and less confidence to use it.</p>
-          <p style="font-weight:700; color:#1B2733;">The fix isn't more information. It's a clear path.</p>
+    <div class="section-head" style="max-width:660px;">
+      <div class="eyebrow eyebrow--green">Treehouse · 28-Day AI Bootcamp</div>
+      <h2>Program overview</h2>
+      <p class="lede">A 28-day guided bootcamp built for total beginners. Each day pairs a video with a hands-on task, so you learn by doing. You'll start with the fundamentals of AI and prompting, then choose a track and ship your own AI agent, web app, or data dashboard — live, and ready to share with anyone.</p>
+    </div>
+    <div class="overview__stats">
+      <div class="ov-stat">
+        <div class="ov-stat__num">28 days</div>
+        <div class="ov-stat__label">Guided, day-by-day curriculum</div>
+      </div>
+      <div class="ov-stat">
+        <div class="ov-stat__num">Beginner friendly</div>
+        <div class="ov-stat__label">No coding or AI experience needed</div>
+      </div>
+      <div class="ov-stat">
+        <div class="ov-stat__num">3 tracks</div>
+        <div class="ov-stat__label">AI agent, web app, or dashboard</div>
+      </div>
+      <div class="ov-stat">
+        <div class="ov-stat__num">Hands-on</div>
+        <div class="ov-stat__label">Daily homework you build yourself</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. THE 28-DAY TIMELINE ============ -->
+<section class="timeline" id="timeline" aria-label="The 28-day timeline">
+  <div class="container">
+    <div class="section-head" style="max-width:660px;">
+      <div class="eyebrow">The 28-day timeline</div>
+      <h2>One foundation. Then your path.</h2>
+      <p class="lede">Everyone starts on the same track — two weeks of foundations every builder needs. Then in Weeks 3-4 you branch into the track that fits what you want to make.</p>
+    </div>
+
+    <div class="tree">
+      <!-- Track: shared Weeks 1–2 -->
+      <div class="tree__track">
+        <div class="track-card">
+          <div class="track-card__head">
+            <span class="tag tag-new">Foundations · Shared track</span>
+            <span class="track-card__days">Weeks 1-2 · Days 1-14</span>
+          </div>
+          <div class="track-card__title">Fundamentals, prompting &amp; getting build-ready</div>
+          <p class="track-card__body">Everyone starts here, assuming zero experience. You'll learn what AI really is, how to prompt with intention, and how to research, validate, and spec out an idea. You'll meet the builder tools — Cursor, Claude Code, and Codex — then close out the two weeks with a sneak peek at each track, so you can pick your path with confidence.</p>
+          <a href="https://teamtreehouse.com/tracks/ai-bootcamp-foundations" class="btn btn-light track-card__cta">View the foundations track →</a>
         </div>
       </div>
-      <div>
-        <div class="mechanism__panel">
-          <div class="eyebrow" style="margin-bottom:24px;">The Builder's Path · Three stages</div>
-          <div class="ladder">
-            <div class="rung" style="border-left:4px solid #1EA7FD;">
-              <div class="rung__num" style="background:#E6F4FD; color:#0C7CD5;">1</div>
-              <div>
-                <div class="rung__title">Chat tools</div>
-                <div class="rung__body">ChatGPT, Claude, Gemini, Perplexity. You learn to prompt with intention, not hope.</div>
-              </div>
-            </div>
-            <div class="rung" style="border-left:4px solid #FFD23F;">
-              <div class="rung__num" style="background:#FFF3D0; color:#8A6200;">2</div>
-              <div>
-                <div class="rung__title">Context tools</div>
-                <div class="rung__body">Claude Projects, Gemini Gems. You stop repeating yourself and give AI a memory. This is where AI shifts from toy to teammate.</div>
-              </div>
-            </div>
-            <div class="rung" style="border-left:4px solid #5FCF80;">
-              <div class="rung__num" style="background:#E8F7EE; color:#2E8B57;">3</div>
-              <div>
-                <div class="rung__title">Builder tools</div>
-                <div class="rung__body">Claude Code, Codex, Lovable. You describe what you want. You watch it become real software.</div>
-              </div>
-            </div>
+
+      <!-- Connector: track fans into three branches -->
+      <div class="tree__connector" aria-hidden="true">
+        <span class="tc-stem"></span>
+        <span class="tc-bus"></span>
+        <span class="tc-drop tc-drop--1"></span>
+        <span class="tc-drop tc-drop--2"></span>
+        <span class="tc-drop tc-drop--3"></span>
+      </div>
+
+      <!-- Branches: Weeks 3–4 track options -->
+      <div class="tree__branches">
+        <!-- Track 1: Web apps -->
+        <div class="branch-card">
+          <div class="icon-badge icon-badge--blue">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0C7CD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9 L21 9"></path></svg>
           </div>
-          <p style="font-size:15px; line-height:1.6; color:#3E4C59; margin:24px 0 0; font-weight:500;">You move one stage at a time. Never skipping ahead, never standing still. That's the whole method. That's why 28 days is enough, even for complete beginners.</p>
+          <div class="branch-card__eyebrow">Track 1 · Weeks 3-4</div>
+          <div class="branch-card__title">Web apps</div>
+          <p class="branch-card__desc">Interactive tools and sites people open, click through, and use.</p>
+          <p class="branch-card__list-label">Pick this if:</p>
+          <ul class="branch-card__list">
+            <li>You want a real interface — pages, forms, buttons, and logins.</li>
+            <li>You want people to create, edit, and save their own stuff — posts, listings, bookings, profiles.</li>
+            <li>You're building something people use day to day — a marketplace, a booking tool, or a member community.</li>
+          </ul>
+          <a href="https://teamtreehouse.com/tracks/ai-bootcamp-web-apps" class="btn btn-primary card-cta">View the Web Apps track →</a>
+        </div>
+
+        <!-- Track 2: AI agents -->
+        <div class="branch-card">
+          <div class="icon-badge icon-badge--green">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 L5 13 L11 13 L11 21 L19 11 L13 11 Z"></path></svg>
+          </div>
+          <div class="branch-card__eyebrow">Track 2 · Weeks 3-4</div>
+          <div class="branch-card__title">AI agents</div>
+          <p class="branch-card__desc">AI that takes action on your users' behalf, automatically.</p>
+          <p class="branch-card__list-label">Pick this if:</p>
+          <ul class="branch-card__list">
+            <li>Your idea is about automation — &ldquo;when this happens, do that.&rdquo;</li>
+            <li>You want AI to do the work, not just answer questions.</li>
+            <li>The value is saving time on repetitive, multi-step tasks.</li>
+          </ul>
+          <a href="https://teamtreehouse.com/tracks/ai-bootcamp-ai-agents" class="btn btn-primary card-cta">View the AI Agents track →</a>
+        </div>
+
+        <!-- Track 3: Data dashboards -->
+        <div class="branch-card">
+          <div class="icon-badge icon-badge--amber">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A6200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 L20 20"></path><path d="M7 20 L7 12"></path><path d="M12 20 L12 6"></path><path d="M17 20 L17 15"></path></svg>
+          </div>
+          <div class="branch-card__eyebrow">Track 3 · Weeks 3-4</div>
+          <div class="branch-card__title">Data dashboards</div>
+          <p class="branch-card__desc">Raw numbers turned into a clear, visual story.</p>
+          <p class="branch-card__list-label">Pick this if:</p>
+          <ul class="branch-card__list">
+            <li>Your idea is about tracking, measuring, or monitoring something.</li>
+            <li>You want to help people spot patterns they'd otherwise miss.</li>
+            <li>You've got data — sales, health, finance, ops — and need to make sense of it.</li>
+          </ul>
+          <a href="https://teamtreehouse.com/tracks/ai-bootcamp-data-dashboards" class="btn btn-primary card-cta">View the Data Dashboards track →</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ 4a. WHO THIS BOOTCAMP IS FOR (photo slider) ============ -->
+<!-- ============ 4. WHAT YOU WALK AWAY WITH ============ -->
+<section class="career" aria-label="What you walk away with">
+  <div class="container">
+    <div class="section-head" style="max-width:640px;">
+      <h2>What you walk away with</h2>
+    </div>
+
+    <div class="career__cards">
+      <div class="career-card career-card--certificate">
+        <div class="career-card__image career-card__image--photo"><img src="assets/logo/mockup-certificate.png" alt="Example Treehouse AI Bootcamp certificate of achievement"></div>
+        <div class="career-card__text">
+          <div class="career-card__heading">
+            <div class="career-card__heading-tile"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 7 L20 12 C20 16.5 16.5 20.3 12 21 C7.5 20.3 4 16.5 4 12 L4 7 Z"></path><path d="M9 12 L11 14 L15 10"></path></svg></div>
+            <h3>Certificate of achievement</h3>
+          </div>
+          <ul class="career-card__list">
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Earn a recognized certificate of achievement on Day 28, backed by everything you built.</p></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Add it to your resume and LinkedIn to show you can build with AI.</p></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Stand out as someone who ships real projects, not just talks about AI.</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="career-card career-card--projects">
+        <div class="career-card__image career-card__image--photo"><img src="assets/logo/mockup-live-project.png" alt="A habit-tracker web app running live in the browser"></div>
+        <div class="career-card__text">
+          <div class="career-card__heading">
+            <div class="career-card__heading-tile"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9 L21 9"></path></svg></div>
+            <h3>A live, shareable project</h3>
+          </div>
+          <ul class="career-card__list">
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Take a rough idea and validate it &mdash; expand on it, stress-test it, and research the competition until it&rsquo;s something people want.</p></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Build a real AI agent, web app, or data dashboard &mdash; live, with a link you can share with anyone.</p></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Walk away with a portfolio piece that proves you can build, not just prompt.</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="career-card career-card--skills">
+        <div class="career-card__image career-card__image--photo"><img src="assets/logo/mockup-builder-skills.png" alt="A code editor with an AI assistant suggesting code"></div>
+        <div class="career-card__text">
+          <div class="career-card__heading">
+            <div class="career-card__heading-tile"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6 C10 4.5 6.5 4 3.5 4.5 L3.5 18 C6.5 17.5 10 18 12 19.5"></path><path d="M12 6 C14 4.5 17.5 4 20.5 4.5 L20.5 18 C17.5 17.5 14 18 12 19.5"></path></svg></div>
+            <h3>Builder skills</h3>
+          </div>
+          <ul class="career-card__list">
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Master prompting craft, context engineering, and builder tools like Cursor, Claude Code, and Codex.</p></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Build real AI judgment: verification habits, safety practices, and knowing when a paid plan is worth it.</p></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg><p>Learn a repeatable way to go from idea to shipped product — one that transfers to whatever AI tool ships next.</p></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. WHO THIS IS FOR ============ -->
 <section class="who" aria-label="Who this bootcamp is for">
   <div class="container">
     <div class="who__head">
@@ -192,360 +256,72 @@
       <div class="who__rule"></div>
     </div>
     <div class="who__slider" id="whoSlider">
-      <!-- cards injected/enhanced by main.js; static markup ensures no-JS fallback -->
+      <!-- Static cards below are the no-JS fallback; main.js clears and rebuilds them as the interactive slider. Keep this list in sync with whoData in main.js. -->
+      <div class="who-card is-active">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="AI curious" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">AI curious</div><div class="who-card__desc">Heard a lot about AI, touched very little of it. The perfect starting point.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
+      <div class="who-card">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" alt="Career focused" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">Career focused</div><div class="who-card__desc">Adding real AI skills to your resume and your day job.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
+      <div class="who-card">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Generalists" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">Generalists</div><div class="who-card__desc">Good at many things, ready to build with all of them.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
+      <div class="who-card">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&crop=faces&w=900&h=1200&q=80" alt="Indie hackers" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">Indie hackers</div><div class="who-card__desc">That side project idea has been waiting for exactly this.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
+      <div class="who-card">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80" alt="Creatives" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">Creatives</div><div class="who-card__desc">Designers, writers, and makers who want working prototypes.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
+      <div class="who-card">
+        <img class="who-card__img" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80" alt="You!" loading="lazy">
+        <div class="who-card__scrim"></div>
+        <div class="who-card__caption"><div class="who-card__label">You!</div><div class="who-card__desc">Whether you're technical or not, if you want to build, this is for you.</div></div>
+        <div class="who-card__accent"></div>
+      </div>
     </div>
     <p class="who__foot">Whether you're technical or not, if you want to build, this is for you.</p>
   </div>
 </section>
 
-<!-- ============ 4. WHO IT'S FOR (checklist) ============ -->
-<section class="forme" aria-label="Who it's for">
-  <div class="container">
-    <h2 class="h2-center" style="margin-bottom:48px;">This was built for you if…</h2>
-    <div class="forme__grid">
-      <div class="forme__list">
-        <div class="check-row">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg>
-          <span>You're a professional who keeps hearing &ldquo;learn AI&rdquo; and nobody will tell you what that actually means</span>
-        </div>
-        <div class="check-row">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg>
-          <span>You're tired of nodding along in meetings about AI you don't really understand</span>
-        </div>
-        <div class="check-row">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg>
-          <span>You have an idea for an app or a tool, and &ldquo;I'm not technical&rdquo; has been the wall for years</span>
-        </div>
-        <div class="check-row">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg>
-          <span>AI honestly makes you a little nervous, and you'd rather face it than keep avoiding it</span>
-        </div>
-        <div class="check-row">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3CB371" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg>
-          <span>You've never written a line of code. Perfect. Day 1 assumes nothing.</span>
-        </div>
-      </div>
-      <div class="notforme">
-        <div class="notforme__label">It's not for you if…</div>
-        <div class="x-row">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF6B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:3px;"><path d="M6 6 L18 18"></path><path d="M18 6 L6 18"></path></svg>
-          <span>You're a working developer looking for machine learning theory</span>
-        </div>
-        <div class="x-row">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF6B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:3px;"><path d="M6 6 L18 18"></path><path d="M18 6 L6 18"></path></svg>
-          <span>You want to watch videos passively and collect a certificate</span>
-        </div>
-        <div class="x-row">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF6B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:3px;"><path d="M6 6 L18 18"></path><path d="M18 6 L6 18"></path></svg>
-          <span>You're not willing to make something every single day, even something small</span>
-        </div>
-        <p class="notforme__foot">If you're in the first list, keep reading. The next section is your next 28 days.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 5. TRANSFORMATION ============ -->
-<section class="transform" aria-label="The transformation">
-  <div class="transform__wrap">
-    <h2 class="h2-center" style="margin-bottom:48px;">Day 1 you. Day 28 you.</h2>
-    <div class="transform__table">
-      <div class="transform__row">
-        <div class="tr-head-1">Day 1</div>
-        <div class="tr-head-2">Day 28</div>
-      </div>
-      <div class="transform__row">
-        <div class="tr-before">AI feels like a threat you're supposed to keep up with</div>
-        <div class="tr-after">AI is leverage you reach for on purpose</div>
-      </div>
-      <div class="transform__row">
-        <div class="tr-before">&ldquo;I'm not a technical person&rdquo;</div>
-        <div class="tr-after">&ldquo;Here, let me show you what I built&rdquo;</div>
-      </div>
-      <div class="transform__row">
-        <div class="tr-before">Prompting means typing and hoping</div>
-        <div class="tr-after">Prompting is a craft with named techniques you own</div>
-      </div>
-      <div class="transform__row">
-        <div class="tr-before">Ideas stay in the someday pile</div>
-        <div class="tr-after">Your idea is live, with a link you can share with anyone</div>
-      </div>
-      <div class="transform__row">
-        <div class="tr-before">Reading about what other people build</div>
-        <div class="tr-after">Other people asking how you built yours</div>
-      </div>
-    </div>
-    <p class="transform__note">Here's the moment we build toward: you send someone the link to your project. Thirty seconds later they say <strong>&ldquo;wait, YOU made this?&rdquo;</strong> That moment changes how you see AI. More importantly, it changes how you see yourself.</p>
-    <div style="text-align:center; margin-top:32px;">
-      <a href="#offer" class="btn btn-primary btn-lg">Start Building →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 6. HOW IT WORKS ============ -->
-<section class="how" aria-label="How it works">
-  <div class="container">
-    <div class="section-head" style="max-width:640px;">
-      <div class="eyebrow">How it works</div>
-      <h2>A system, not a firehose.</h2>
-      <p style="font-size:18px; line-height:1.6; color:#3E4C59; margin:0;"><strong style="color:#1B2733;">Plan on one hour a day.</strong> 15–20 minutes of video, then the rest hands-on, trying things yourself. Learn, then make. Learn, then make.</p>
-    </div>
-    <div class="how__cards">
-      <div class="how-card">
-        <div class="icon-badge" style="background:#E8F7EE;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3 L19 12 L5 21 Z"></path></svg>
-        </div>
-        <div class="how-card__title">Daily videos</div>
-        <div class="how-card__body">A short group of videos, 15–20 minutes total. No filler.</div>
-      </div>
-      <div class="how-card">
-        <div class="icon-badge" style="background:#E6F4FD;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0C7CD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="13" rx="2"></rect><path d="M8 21 L16 21"></path></svg>
-        </div>
-        <div class="how-card__title">One named tool</div>
-        <div class="how-card__body">You always know exactly what to open and why.</div>
-      </div>
-      <div class="how-card">
-        <div class="icon-badge" style="background:#FFF3D0;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A6200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L12 21"></path><path d="M5 10 L12 3 L19 10"></path></svg>
-        </div>
-        <div class="how-card__title">Daily homework</div>
-        <div class="how-card__body">Work through it on your own, hands on the tools. The floor is small. The ceiling is yours.</div>
-      </div>
-      <div class="how-card">
-        <div class="icon-badge" style="background:#E8F7EE;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg>
-        </div>
-        <div class="how-card__title">One artifact</div>
-        <div class="how-card__body">Something exists at the end of the day that didn't exist before.</div>
-      </div>
-    </div>
-    <div class="how__foot">
-      <p><strong>You're never alone in it.</strong> Share every deliverable in the community. See what everyone else made from the same brief. Watch short interviews with working practitioners who use these exact tools in their jobs. You're not completing assignments. You're accumulating creations.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 7. THE 28-DAY TIMELINE ============ -->
-<section class="timeline" id="timeline" aria-label="The 28-day timeline">
-  <div class="container">
-    <div class="section-head" style="max-width:640px;">
-      <div class="eyebrow">The 28-day timeline</div>
-      <h2>Every day, mapped. No mystery.</h2>
-      <div class="timeline__legend">
-        <span><span class="legend-swatch" style="background:#1EA7FD;"></span> Chat tools</span>
-        <span><span class="legend-swatch" style="background:#FFD23F;"></span> Advanced prompting</span>
-        <span><span class="legend-swatch" style="background:#5FCF80;"></span> MVP build</span>
-        <span><span class="legend-swatch" style="background:#1B2733;"></span> Launch your idea</span>
-      </div>
-    </div>
-
-    <div class="day-strip" id="dayStrip"></div>
-    <div class="week-labels">
-      <div>Week 1</div><div>Week 2</div><div>Week 3</div><div>Week 4</div>
-    </div>
-
-    <div class="week-cards">
-      <div class="week-card">
-        <div>
-          <span class="tag tag-pop">Foundations</span>
-          <div class="week-card__eyebrow" style="color:#0C7CD5;">Week 1</div>
-          <div class="week-card__title">Chat tools and prompting</div>
-          <div class="week-card__days">Days 1–7</div>
-        </div>
-        <div class="week-card__body">
-          <p>You live in the chat tools: ChatGPT, Claude, Gemini, Perplexity. But the way you use them escalates daily. Framing strategies. Zero-shot vs. few-shot. Chain of thought. How to manage conversations, spot AI mistakes, and build safety habits from day one. Your prompt library starts on Day 4.</p>
-          <div class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 L18 3 L18 21 L12 17 L6 21 Z"></path></svg>
-            Weekend project: your persona card + problem statement, living in your first Claude Project
-          </div>
-        </div>
-      </div>
-
-      <div class="week-card">
-        <div>
-          <span class="tag tag-free">Foundations</span>
-          <div class="week-card__eyebrow" style="color:#8A6200;">Week 2</div>
-          <div class="week-card__title">Advanced prompting and builder tools</div>
-          <div class="week-card__days">Days 8–14</div>
-        </div>
-        <div class="week-card__body">
-          <p>Context goes deep: Claude Projects, structured outputs, mega-prompts, and the context file pattern the pros use. Then you learn the most underrated skill in AI building — writing a spec — and get your first taste of builder tools. You'll watch your words become a working interface.</p>
-          <div class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 L18 3 L18 21 L12 17 L6 21 Z"></path></svg>
-            Weekend project: the written spec for the thing you're about to build
-          </div>
-        </div>
-      </div>
-
-      <div class="week-card">
-        <div>
-          <span class="tag tag-rec">Build</span>
-          <div class="week-card__eyebrow" style="color:#2E8B57;">Week 3</div>
-          <div class="week-card__title">Build your MVP</div>
-          <div class="week-card__days">Days 15–21</div>
-        </div>
-        <div class="week-card__body">
-          <p>Pick your track: an AI agent, a web app, or a data dashboard. Guided build sessions all week using Claude Code, Codex, or Lovable. Your build log captures every decision along the way.</p>
-          <div class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 L18 3 L18 21 L12 17 L6 21 Z"></path></svg>
-            Weekend milestone: a rough, working MVP. Ugly is fine. Working is the point.
-          </div>
-        </div>
-      </div>
-
-      <div class="week-card">
-        <div>
-          <span class="tag tag-cert">Launch</span>
-          <div class="week-card__eyebrow" style="color:#1B2733;">Week 4</div>
-          <div class="week-card__title">Polish and launch your idea</div>
-          <div class="week-card__days">Days 22–28</div>
-        </div>
-        <div class="week-card__body">
-          <p>Refine and polish. Deploy it. Build the landing page for your project and get a live link you can share with anyone. Final weekend: showcase. You put your work in front of the community, and you earn your certificate of completion.</p>
-          <div class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 L18 3 L18 21 L12 17 L6 21 Z"></path></svg>
-            Day 28: your project is live, your link is shareable, your certificate is earned.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline__callout">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M4 19 L4 5 C4 3.9 4.9 3 6 3 L20 3 L20 17 L6 17 C4.9 17 4 17.9 4 19 Z"></path><path d="M4 19 C4 20.1 4.9 21 6 21 L20 21"></path></svg>
-      <p><strong>Running the entire time: your prompt library.</strong> It starts Day 4 and grows every day. On Day 28 it walks out the door with you, and it keeps working long after the bootcamp ends.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 8. WHAT YOU'LL LEARN ============ -->
-<section class="learn" aria-label="What you'll learn">
-  <div class="container">
-    <div class="section-head" style="max-width:600px;">
-      <div class="eyebrow">What you'll learn</div>
-      <h2 style="margin-bottom:0;">The skills under the projects.</h2>
-    </div>
-    <div class="learn__grid">
-      <div class="learn-card">
-        <div class="icon-badge" style="background:#E6F4FD;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0C7CD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12 C21 16.4 17 20 12 20 C10.8 20 9.7 19.8 8.7 19.5 L4 21 L5.5 17.2 C4 15.8 3 14 3 12 C3 7.6 7 4 12 4 C17 4 21 7.6 21 12 Z"></path></svg>
-        </div>
-        <div class="learn-card__title">Prompting craft</div>
-        <div class="learn-card__body">Framing, few-shot patterns, chain of thought, mega-prompts. Repeatable technique instead of lucky guesses.</div>
-      </div>
-      <div class="learn-card">
-        <div class="icon-badge" style="background:#FFF3D0;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A6200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6 L20 6"></path><path d="M4 12 L20 12"></path><path d="M4 18 L14 18"></path></svg>
-        </div>
-        <div class="learn-card__title">Context engineering</div>
-        <div class="learn-card__body">Projects, Gems, and context files. The single biggest gap between casual users and power users.</div>
-      </div>
-      <div class="learn-card">
-        <div class="icon-badge" style="background:#E8F7EE;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 7 L20 12 C20 16.5 16.5 20.3 12 21 C7.5 20.3 4 16.5 4 12 L4 7 Z"></path></svg>
-        </div>
-        <div class="learn-card__title">AI judgment</div>
-        <div class="learn-card__body">Failure modes, verification habits, safety practices, and when a paid plan is actually worth it.</div>
-      </div>
-      <div class="learn-card">
-        <div class="icon-badge" style="background:#E8F7EE;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8 L4 12 L8 16"></path><path d="M16 8 L20 12 L16 16"></path><path d="M13 5 L11 19"></path></svg>
-        </div>
-        <div class="learn-card__title">Builder tools</div>
-        <div class="learn-card__body">Claude Code, Codex, and Lovable. From description to deployed software.</div>
-      </div>
-      <div class="learn-card">
-        <div class="icon-badge" style="background:#E6F4FD;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0C7CD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 C12 3 6 9 6 14 C6 17.3 8.7 20 12 20 C15.3 20 18 17.3 18 14 C18 9 12 3 12 3 Z" transform="rotate(45 12 12)"></path></svg>
-        </div>
-        <div class="learn-card__title">Shipping skills</div>
-        <div class="learn-card__body">Writing specs, keeping build logs, launching pages, sharing your work. The skills that make the next build faster than this one.</div>
-      </div>
-      <div class="learn-card learn-card--dark">
-        <div class="learn-card__title">Tools will change. The path doesn't.</div>
-        <div class="learn-card__body">Learn the way once and every new tool is just another step on it.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 9. THE STACK ============ -->
-<section class="stack" aria-label="What you walk away with">
-  <div class="container">
-    <div class="stack__grid">
-      <div class="stack__aside">
-        <div class="eyebrow eyebrow--green">The stack</div>
-        <h2>What you walk away with on Day 28.</h2>
-        <p style="margin:0 0 12px;">A certificate, and the portfolio to back it up.</p>
-        <p style="margin:0 0 32px;">Not knowledge about AI. Evidence you build with it.</p>
-        <a href="#offer" class="btn btn-primary btn-lg">Start Building →</a>
-      </div>
-      <div class="stack__list">
-        <div class="stack-item stack-item--lead">
-          <div class="stack-item__num">01</div>
-          <div>
-            <div class="stack-item__title">A working product in your chosen track</div>
-            <div class="stack-item__body">AI agent, web app, or data dashboard. Live, real, with a link you can share with anyone.</div>
-          </div>
-        </div>
-        <div class="stack-item">
-          <div class="stack-item__num">02</div>
-          <div>
-            <div class="stack-item__title">A certificate of completion</div>
-            <div class="stack-item__body">Earned on Day 28, backed by everything else on this list.</div>
-          </div>
-        </div>
-        <div class="stack-item">
-          <div class="stack-item__num">03</div>
-          <div>
-            <div class="stack-item__title">A landing page for your project</div>
-            <div class="stack-item__body">Ready to share with anyone.</div>
-          </div>
-        </div>
-        <div class="stack-item">
-          <div class="stack-item__num">04</div>
-          <div>
-            <div class="stack-item__title">Your personal prompt library</div>
-            <div class="stack-item__body">28 days of battle-tested prompts, organized and reusable forever.</div>
-          </div>
-        </div>
-        <div class="stack-item">
-          <div class="stack-item__num">05</div>
-          <div>
-            <div class="stack-item__title">The community</div>
-            <div class="stack-item__body">Builders on the same climb, plus practitioner interviews from the field.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 10. CREDIBILITY ============ -->
+<!-- ============ 6. FROM TREEHOUSE ============ -->
 <section class="cred" aria-label="About Treehouse">
   <div class="container">
     <div class="cred__grid">
       <div>
         <div class="cred__photo">
-          <img src="assets/logo/mark.svg" width="140" height="140" alt="Treehouse">
+          <svg class="cred__logo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 32"><path d="M26.5 5.9c-1.1-0.6-2.8 0.4-3.9 2.2l-1.9 3.2c-0.7 1.3-0.6 3 0.3 4.2l0.1 0.1c0.9 1.2 2.1 2.4 2.4 2.8 0.2 0.2 0.4 0.5 0.5 0.9 0.3 1.1-0.3 2.3-1.5 2.6 -1.1 0.3-2.3-0.3-2.7-1.5 -0.1-0.3-0.1-0.6-0.1-0.8 0.1-0.5-0.1-1.2-0.8-2 -0.7-0.7-2.1 0.7-2.5 2.1v0.1c-0.4 1.4-0.7 2.7-0.6 2.8 0.1 0.1 0.1 0.1 0.1 0.2 0.6 1.2 0.2 2.6-1 3.2 -1.2 0.6-2.7 0.2-3.3-1s-0.2-2.6 1-3.2c0.1 0 0.1-0.1 0.2-0.1 0.1 0 0.3-0.6 0.6-1.4 0.2-0.7 0.3-1 0.4-1.3 0.1-0.4 0.3-1.4 0.2-1.8 -0.1-0.5-0.6-0.5-1.2-0.2 -0.3 0.2-0.9 0.7-1.1 0.9 -0.5 0.4-0.9 1-1.1 1.5 -0.1 0.2-0.3 0.5-0.5 0.7 -0.9 0.7-2.3 0.6-3-0.3 -0.7-0.9-0.6-2.2 0.3-3 0.3-0.2 0.6-0.4 0.9-0.4 0.5-0.1 2.4-1.2 3.5-2 0.2-0.1 0.5-0.4 0.6-0.5 0.3-0.4 0-0.7-0.3-0.7 -0.9 0.1-1.9 0.2-2.1 0.5 -0.1 0.1-0.2 0.3-0.4 0.4 -0.9 0.6-2.1 0.4-2.7-0.4 -0.6-0.8-0.4-2 0.4-2.6 0.4-0.3 0.8-0.4 1.2-0.4 0.7 0 2.5 0.4 4 0.1l0.4-0.1c1.5-0.3 3.3-1.6 4-2.9 0 0 0.7-1.2 1.6-2.7 0.9-1.5 0.8-3.2-0.1-3.7l-1.7-1c-0.9-0.5-2.3-0.5-3.2 0L1.6 7C0.7 7.5 0 8.6 0 9.6v12.8c0 1 0.7 2.2 1.6 2.7l11.9 6.5c0.9 0.5 2.3 0.5 3.2 0l11.8-6.5c0.9-0.5 1.6-1.7 1.6-2.7V9.6c0-1-0.7-2.2-1.6-2.7C26.5 5.9 28.5 7 26.5 5.9z"/></svg>
         </div>
       </div>
       <div>
-        <div class="eyebrow" style="color:#5FCF80;">From the team at Treehouse</div>
-        <h2>Fifteen years of turning beginners into builders.</h2>
-        <p>Since 2011, Treehouse has taught hundreds of thousands of people to code with short, focused videos and hands-on practice. No lecture halls, no jargon, no gatekeeping. Career-changers, self-taught learners, and complete beginners have used Treehouse to land jobs and build things they didn't think they could build. This bootcamp is that same patient method, pointed at AI.</p>
-        <p>Along the way you'll hear from <strong>Darien, Taz, and Callie</strong>, working practitioners who use these exact tools in their jobs, in short interviews woven through the curriculum.</p>
+        <div class="eyebrow eyebrow--on-dark">From the team at Treehouse</div>
+        <h2>Turning beginners into builders.</h2>
+        <p>Treehouse has empowered over 1.2 million learners worldwide to gain in-demand tech skills and launch rewarding careers. Our mission is to make tech education accessible to everyone, teaching through project-based courses, hands-on practice, and real human support. This bootcamp brings that same proven, job-focused approach to building with AI.</p>
         <div class="cred__stats">
           <div>
             <div class="cred-stat__num">2011</div>
             <div class="cred-stat__label">Teaching beginners since</div>
           </div>
           <div>
-            <div class="cred-stat__num">220k+</div>
-            <div class="cred-stat__label">Certificates earned on Treehouse</div>
+            <div class="cred-stat__num">1.2M+</div>
+            <div class="cred-stat__label">Learners worldwide</div>
           </div>
           <div>
-            <div class="cred-stat__num">1,200+</div>
+            <div class="cred-stat__num">600+</div>
             <div class="cred-stat__label">Courses &amp; workshops</div>
           </div>
         </div>
@@ -554,98 +330,59 @@
   </div>
 </section>
 
-<!-- ============ 12. FAQ ============ -->
+<!-- ============ 7. FAQ ============ -->
 <section class="faq" aria-label="Frequently asked questions">
   <div class="faq__wrap">
-    <h2 class="h2-center" style="margin-bottom:48px;">The questions you're already asking.</h2>
+    <div class="faq__head">
+      <h2 class="h2-center">Frequently Asked Questions</h2>
+      <p class="faq__sub">Everything you need to know before you start.</p>
+    </div>
     <div class="faq__list">
-      <details open>
-        <summary>&ldquo;Honestly, AI makes me nervous.&rdquo;</summary>
-        <p>That's more common than you think, and it's a fair response to all the noise. We move one small step at a time, and you build safety habits from Day 1: what to trust, what to double-check, what to keep private. The nervousness fades fast once your hands are on the tools.</p>
+      <details>
+        <summary>Do I need any coding or AI experience?</summary>
+        <p>No prior experience is required. The first two weeks begin with the fundamentals of AI and assume no coding or AI background, so you'll build confidence from Day 1 as you learn by doing.</p>
       </details>
       <details>
-        <summary>&ldquo;I'm not technical at all.&rdquo;</summary>
-        <p>Neither were most of our students. Day 1 assumes zero coding and zero AI experience. If you can write an email, you can start this bootcamp.</p>
+        <summary>How much time does it take each day?</summary>
+        <p>Each day includes a video and a hands-on task to apply what you've learned. There's a new lesson every day across the 28 days, and you're free to spend as much time building as you'd like.</p>
       </details>
       <details>
-        <summary>&ldquo;I don't have time.&rdquo;</summary>
-        <p>Plan on about an hour a day: 15–20 minutes of video, the rest hands-on practice. And it's fully self-paced. Busy week? Do the floor. Free weekend? Chase the ceiling.</p>
+        <summary>Is it included in my Treehouse subscription?</summary>
+        <p>Yes. The bootcamp is included with any paid Treehouse plan at no additional cost. If you're already a member, you can <a href="https://teamtreehouse.com/tracks/ai-bootcamp-foundations">jump straight into the bootcamp</a>; if you're new, you can <a href="https://teamtreehouse.com/subscribe/new?trial=yes">start with a free 7-day trial</a>.</p>
       </details>
       <details>
-        <summary>&ldquo;Do I need to pay for AI tools?&rdquo;</summary>
-        <p>No. Free plans carry you through the bootcamp. We also teach you exactly when upgrading is worth it, so you never pay out of confusion.</p>
+        <summary>Do I need to pay for AI tools?</summary>
+        <p>You can begin on the free plans of the tools we use. A few of the builder tools introduced in weeks 3-4, such as Cursor and Claude Code, offer more on a paid plan — and we'll explain exactly when an upgrade is worthwhile so you can decide for yourself.</p>
       </details>
       <details>
-        <summary>&ldquo;Won't this be outdated in six months?&rdquo;</summary>
-        <p>The tools might update. The path won't. You're learning how to move from chatting to teaching to building. That skill transfers to every tool that ships next year, and the year after.</p>
+        <summary>How do I start?</summary>
+        <p><a href="https://teamtreehouse.com/subscribe/new?trial=yes">Start your free 7-day trial</a>, or <a href="https://teamtreehouse.com/tracks/ai-bootcamp-foundations">jump straight into the bootcamp</a> if you're already a member, and begin with Day 1. Each day guides you through exactly what to watch and what to build, so there's nothing to figure out on your own.</p>
       </details>
       <details>
-        <summary>&ldquo;What if I fall behind?&rdquo;</summary>
-        <p>The 5+2 rhythm has breathing room built in, and the community keeps you moving. Falling behind for a few days is normal. Staying on the sideline for another year is the actual risk.</p>
+        <summary>Will what I learn be outdated in six months?</summary>
+        <p>AI tools evolve quickly, but the underlying approach doesn't. You'll learn a repeatable process — from the fundamentals and prompting to shipping a real project — that transfers to whatever tools come next and keeps your skills relevant well beyond the bootcamp.</p>
       </details>
     </div>
   </div>
 </section>
 
-<!-- ============ 13. OFFER + RISK REVERSAL ============ -->
-<section class="offer" id="offer" aria-label="The offer">
-  <div class="offer__wrap">
-    <div class="offer__head">
-      <div class="eyebrow eyebrow--green">The offer</div>
-      <h2 class="h2-center" style="margin:12px 0 16px;">Here's the whole deal.</h2>
-      <p>28 days. One hour a day. A clear path of tools that ends with a real product you can share by link, a landing page, a prompt library, a certificate, and a community.</p>
-    </div>
-    <div class="offer__box">
-      <div class="offer__price">Included with your Treehouse membership.</div>
-      <p>Already a member? The bootcamp is in your library right now. New here? Try the whole first week on a free trial.</p>
-      <a href="#offer" class="btn btn-primary btn-lg" style="font-size:18px; padding:18px 40px;">Start your 7-day free trial →</a>
-      <div class="offer__meta">
-        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg> Start anytime</span>
-        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg> Go at your own pace</span>
-        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12 L11 15 L16 9"></path></svg> No credit card to browse</span>
-      </div>
-    </div>
-    <div class="offer__guarantee">
-      <div class="offer__guarantee-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 7 L20 12 C20 16.5 16.5 20.3 12 21 C7.5 20.3 4 16.5 4 12 L4 7 Z"></path><path d="M9 12 L11 14 L15 10"></path></svg>
-      </div>
-      <div>
-        <div class="offer__guarantee-title">The Week 1 test drive</div>
-        <div class="offer__guarantee-body">Your 7-day free trial covers all of Week 1. If you haven't made something real by Day 7, cancel and pay nothing. No forms, no friction, no hard feelings.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 14. FINAL CTA ============ -->
+<!-- ============ 8. FINAL CTA ============ -->
 <section class="final" aria-label="Final call to action">
   <div class="final__wrap">
-    <h2>Two versions of you, 28 days from now.</h2>
-    <div class="final__prose">
-      <p>One kept up with the AI news. Saved the articles. Still waiting to feel ready.</p>
-      <p>The other one built something. Shipped it. Sent the link to a friend and watched the <span class="accent">&ldquo;wait, you made this?&rdquo;</span> reply come in.</p>
-      <p><strong>Same 28 days. Same starting point. One difference.</strong></p>
+    <div class="final__eyebrow">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 C12.4 5.6 13.2 7.6 14.8 9.2 C16.4 10.8 18.4 11.6 22 12 C18.4 12.4 16.4 13.2 14.8 14.8 C13.2 16.4 12.4 18.4 12 22 C11.6 18.4 10.8 16.4 9.2 14.8 C7.6 13.2 5.6 12.4 2 12 C5.6 11.6 7.6 10.8 9.2 9.2 C10.8 7.6 11.6 5.6 12 2 Z"></path></svg>
+      Start your transformation today
     </div>
-    <a href="#offer" class="btn btn-primary btn-lg" style="font-size:18px; padding:18px 44px;">Start Building →</a>
-    <p class="final__foot">Ready is not a feeling. It's a decision. See you on Day 1.</p>
+    <h2>Ready to build your first AI product?</h2>
+    <p class="final__lead">You don't need a technical background to get started &mdash; just the willingness to build. Follow the daily lessons, put each one into practice, and in 28 days you'll have shipped a real AI product of your own.</p>
+    <a href="https://teamtreehouse.com/subscribe/new?trial=yes" class="btn btn-primary btn-lg" style="font-size:18px; padding:18px 44px;">Start Free Trial →</a>
+    <p class="final__foot">7-day free trial • Cancel anytime • Start immediately</p>
+    <a href="#timeline" class="final__back">↑ Back to the timeline</a>
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="site-footer__inner">
-    <img src="assets/logo/wordmark.svg" height="26" alt="Treehouse" style="display:block;">
-    <nav>
-      <span>Tracks</span>
-      <span>Techdegree</span>
-      <span>Library</span>
-      <span>Community</span>
-      <span>Support</span>
-    </nav>
-    <div class="site-footer__copy">© 2026 Treehouse Island, Inc.</div>
-  </div>
-</footer>
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

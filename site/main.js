@@ -3,59 +3,7 @@
   'use strict';
 
   /* ---------------------------------------------------------
-     1. Sticky CTA bar — slides in after ~12% scroll depth
-     --------------------------------------------------------- */
-  var stickyBar = document.getElementById('stickyBar');
-  if (stickyBar) {
-    var onScroll = function () {
-      var threshold = document.documentElement.scrollHeight * 0.12;
-      var scrolled = window.scrollY > Math.max(600, threshold);
-      if (scrolled) {
-        if (!stickyBar.classList.contains('is-visible')) {
-          stickyBar.hidden = false;
-          stickyBar.classList.add('is-visible');
-        }
-      } else if (stickyBar.classList.contains('is-visible')) {
-        stickyBar.classList.remove('is-visible');
-        stickyBar.hidden = true;
-      }
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-  }
-
-  /* ---------------------------------------------------------
-     2. 28-day strip — one solid color per week (weekends included)
-     --------------------------------------------------------- */
-  var weekColors = [
-    { bg: '#1EA7FD', fg: '#FFFFFF' },
-    { bg: '#FFD23F', fg: '#1B2733' },
-    { bg: '#5FCF80', fg: '#FFFFFF' },
-    { bg: '#1B2733', fg: '#FFFFFF' }
-  ];
-  var weekNames = [
-    'Week 1 · Foundations: Chat tools and prompting',
-    'Week 2 · Foundations: Advanced prompting and builder tools',
-    'Week 3 · Build your MVP',
-    'Week 4 · Polish and launch your idea'
-  ];
-  var dayStrip = document.getElementById('dayStrip');
-  if (dayStrip) {
-    for (var i = 0; i < 28; i++) {
-      var week = Math.floor(i / 7);
-      var c = weekColors[week];
-      var cell = document.createElement('div');
-      cell.className = 'day-cell';
-      cell.style.background = c.bg;
-      cell.style.color = c.fg;
-      cell.title = weekNames[week];
-      cell.textContent = String(i + 1);
-      dayStrip.appendChild(cell);
-    }
-  }
-
-  /* ---------------------------------------------------------
-     3. "Who this bootcamp is for" — expanding photo slider
+     "Who this bootcamp is for" — expanding photo slider
      --------------------------------------------------------- */
   var whoData = [
     { label: 'AI curious',    desc: 'Heard a lot about AI, touched very little of it. The perfect starting point.', src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80' },
@@ -67,6 +15,8 @@
   ];
   var slider = document.getElementById('whoSlider');
   if (slider) {
+    // Remove the static no-JS fallback cards before building the interactive slider.
+    slider.innerHTML = '';
     var cards = whoData.map(function (d, idx) {
       var card = document.createElement('div');
       card.className = 'who-card' + (idx === 0 ? ' is-active' : '');
@@ -122,5 +72,24 @@
       slider.appendChild(card);
       return card;
     });
+
+    // Carousel (Slick): 1 card + dots + swipe at <=963px, where the
+    // expanding photo slider no longer fits; the slider shows above that.
+    if (window.jQuery && jQuery.fn.slick) {
+      var $who = jQuery(slider);
+      var mqMobile = window.matchMedia('(max-width: 963px)');
+      var syncSlick = function () {
+        if (mqMobile.matches) {
+          if (!$who.hasClass('slick-initialized')) {
+            $who.slick({ infinite: true, arrows: false, dots: true, slidesToShow: 1, slidesToScroll: 1 });
+          }
+        } else if ($who.hasClass('slick-initialized')) {
+          $who.slick('unslick');
+        }
+      };
+      syncSlick();
+      if (mqMobile.addEventListener) { mqMobile.addEventListener('change', syncSlick); }
+      else if (mqMobile.addListener) { mqMobile.addListener(syncSlick); }
+    }
   }
 })();
