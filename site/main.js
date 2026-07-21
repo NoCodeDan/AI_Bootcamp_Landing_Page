@@ -70,5 +70,24 @@
       slider.appendChild(card);
       return card;
     });
+
+    // Mobile-only carousel (Slick): 1 card + dots + swipe under 767px;
+    // desktop/tablet keep the expanding photo slider.
+    if (window.jQuery && jQuery.fn.slick) {
+      var $who = jQuery(slider);
+      var mqMobile = window.matchMedia('(max-width: 766px)');
+      var syncSlick = function () {
+        if (mqMobile.matches) {
+          if (!$who.hasClass('slick-initialized')) {
+            $who.slick({ infinite: true, arrows: false, dots: true, slidesToShow: 1, slidesToScroll: 1 });
+          }
+        } else if ($who.hasClass('slick-initialized')) {
+          $who.slick('unslick');
+        }
+      };
+      syncSlick();
+      if (mqMobile.addEventListener) { mqMobile.addEventListener('change', syncSlick); }
+      else if (mqMobile.addListener) { mqMobile.addListener(syncSlick); }
+    }
   }
 })();

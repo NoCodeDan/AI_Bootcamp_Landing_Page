@@ -312,6 +312,21 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .who-card.is-active .who-card__accent { background: var(--td-gradient); }
 .th-ai-bootcamp-2026 .who__foot { font-size: 1.0625rem; line-height: 1.5; color: var(--td-text-muted); text-align: center; margin: 2.5rem 0 0; font-weight: 500; }
 
+/* Who: mobile carousel (Slick, active < 767px only) */
+.th-ai-bootcamp-2026 .who .slick-slide { margin: 0 4px; }
+.th-ai-bootcamp-2026 .who .slick-list { margin: 0 -4px; }
+.th-ai-bootcamp-2026 .who__slider.slick-initialized { display: block; height: auto; margin-bottom: 3.25rem; }
+.th-ai-bootcamp-2026 .who__slider.slick-initialized .who-card { height: 20rem; min-width: 0; }
+.th-ai-bootcamp-2026 .who__slider.slick-initialized .who-card__desc { display: block; }
+.th-ai-bootcamp-2026 .who__slider.slick-initialized .who-card__accent { background: var(--td-gradient); }
+.th-ai-bootcamp-2026 .who__slider.slick-initialized .who-card__label { font-size: 1.375rem; }
+.th-ai-bootcamp-2026 .who__slider.slick-initialized .who-card__caption { padding: 1.25rem; }
+.th-ai-bootcamp-2026 .who .slick-dots { position: absolute; width: 100%; margin: 0; bottom: -2.5rem; list-style: none; text-align: center; padding: 0; }
+.th-ai-bootcamp-2026 .who .slick-dots li { display: inline-block; margin: 0 5px; padding: 0; }
+.th-ai-bootcamp-2026 .who .slick-dots li button { font-size: 0; line-height: 0; display: block; width: 20px; height: 20px; padding: 5px; cursor: pointer; border: 0; background: transparent; }
+.th-ai-bootcamp-2026 .who .slick-dots li button::before { content: "\2022"; font-size: 40px; line-height: 20px; display: block; width: 20px; height: 20px; text-align: center; color: var(--td-text-muted); opacity: 0.35; }
+.th-ai-bootcamp-2026 .who .slick-dots li.slick-active button::before { opacity: 1; color: var(--td-blue); }
+
 /* =========================================================
    Credibility (dark)
    ========================================================= */
