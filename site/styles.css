@@ -356,6 +356,8 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 .th-ai-bootcamp-2026 .faq summary::after { content: ''; width: 0.6rem; height: 0.6rem; flex-shrink: 0; border-right: 2px solid var(--td-text-muted); border-bottom: 2px solid var(--td-text-muted); transform: rotate(45deg); transition: var(--td-ease); margin-bottom: 0.15rem; }
 .th-ai-bootcamp-2026 .faq details[open] summary::after { transform: rotate(-135deg); margin-bottom: -0.15rem; }
 .th-ai-bootcamp-2026 .faq details p { font-size: 1rem; line-height: 1.5; color: var(--td-text-muted); margin: 0; padding: 0 0 1.375rem; }
+.th-ai-bootcamp-2026 .faq details p a { color: #2563eb; font-weight: 600; text-decoration: underline; }
+.th-ai-bootcamp-2026 .faq details p a:hover { opacity: 0.85; }
 
 /* =========================================================
    Offer
