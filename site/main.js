@@ -71,11 +71,11 @@
       return card;
     });
 
-    // Mobile-only carousel (Slick): 1 card + dots + swipe under 767px;
-    // desktop/tablet keep the expanding photo slider.
+    // Carousel (Slick): 1 card + dots + swipe at <=963px, where the
+    // expanding photo slider no longer fits; the slider shows above that.
     if (window.jQuery && jQuery.fn.slick) {
       var $who = jQuery(slider);
-      var mqMobile = window.matchMedia('(max-width: 766px)');
+      var mqMobile = window.matchMedia('(max-width: 963px)');
       var syncSlick = function () {
         if (mqMobile.matches) {
           if (!$who.hasClass('slick-initialized')) {
