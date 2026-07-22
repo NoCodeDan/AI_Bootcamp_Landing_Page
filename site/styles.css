@@ -9,7 +9,7 @@
 
 :root {
   /* Signature brand gradient — primary buttons, badges, gradient headings */
-  --td-gradient: linear-gradient(126deg, #804197, #31af7f);
+  --td-gradient: linear-gradient(126deg, #804197, #157f5f);
 
   /* Text */
   --td-text: #020817; /* headings / near-black */
@@ -46,6 +46,15 @@
   /* Sample-project accent (PlantPal hero mockup). Deliberately off-brand green,
      matching the 🌱 leaf, so the demo app doesn't read as Treehouse branding. */
   --td-sample-green: #16a34a;
+
+  /* Solid brand purple — the gradient's start color. Used wherever the gradient
+     itself would fail WCAG AA: its green end (#31af7f) is only ~2.8:1 against
+     white, while this purple is ~6.7:1. */
+  --td-brand-purple: #804197;
+
+  /* Green for text on the dark sections. Lightened from #5fcf80, which only hit
+     ~4.2:1 against the lightest end of --td-bg-dark; this clears AA at ~5.1:1. */
+  --td-on-dark-green: #7ee0a0;
 
   /* Radius */
   --td-radius-card: 0.5rem;
@@ -120,15 +129,13 @@ body.th-ai-bootcamp-2026 {
   text-transform: uppercase;
   color: var(--td-blue);
 }
+/* Solid rather than gradient text: the gradient's green end only reaches ~2.8:1
+   against white, failing WCAG AA for this 14px label. */
 .th-ai-bootcamp-2026 .eyebrow--green {
-  background: var(--td-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: var(--td-brand-purple);
 }
 .th-ai-bootcamp-2026 .eyebrow--on-dark {
-  color: #5fcf80;
+  color: var(--td-on-dark-green);
 }
 
 /* Gradient text utility */
@@ -248,8 +255,10 @@ body.th-ai-bootcamp-2026 {
   background: var(--td-text);
   color: #fff;
 }
+/* Solid purple rather than the gradient: white on the gradient's green end is
+   only ~2.8:1, failing AA for this 12px pill. */
 .th-ai-bootcamp-2026 .tag-new {
-  background: var(--td-gradient);
+  background: var(--td-brand-purple);
   color: #fff;
 }
 
@@ -449,7 +458,7 @@ body.th-ai-bootcamp-2026 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 62%;
+  width: 100%;
   background: var(--td-bg-dark);
   border-radius: var(--td-radius-card);
   box-shadow: var(--td-shadow-lg);
@@ -757,7 +766,7 @@ body.th-ai-bootcamp-2026 {
 /* Emphasized sentence on the dark card. Overrides the base `strong` color,
    which is near-black and would disappear against this background. */
 .th-ai-bootcamp-2026 .track-card__body strong {
-  color: #5fcf80;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -1109,7 +1118,7 @@ body.th-ai-bootcamp-2026 {
 .th-ai-bootcamp-2026 .cred__logo {
   width: 55%;
   height: auto;
-  fill: #5fcf80;
+  fill: var(--td-on-dark-green);
 }
 .th-ai-bootcamp-2026 .cred h2 {
   font-size: 1.875rem;
@@ -1138,7 +1147,7 @@ body.th-ai-bootcamp-2026 {
 .th-ai-bootcamp-2026 .cred-stat__num {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #5fcf80;
+  color: var(--td-on-dark-green);
   line-height: 1;
 }
 .th-ai-bootcamp-2026 .cred-stat__label {
