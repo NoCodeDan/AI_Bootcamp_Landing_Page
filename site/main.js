@@ -6,7 +6,7 @@
      "Who this bootcamp is for" — expanding photo slider
      --------------------------------------------------------- */
   var whoData = [
-    { label: 'AI curious',    desc: 'Heard a lot about AI, touched very little of it. The perfect starting point.', src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80' },
+    { label: 'AI curious',    desc: 'Heard a lot about AI, touched very little of it. The perfect starting point.', src: 'assets/newImage.jpeg' },
     { label: 'Career focused', desc: 'Adding real AI skills to your resume and your day job.', src: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80' },
     { label: 'Generalists',   desc: 'Good at many things, ready to build with all of them.', src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80' },
     { label: 'Indie hackers', desc: 'That side project idea has been waiting for exactly this.', src: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&crop=faces&w=900&h=1200&q=80' },

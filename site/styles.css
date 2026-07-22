@@ -8,8 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Signature brand gradient — primary buttons, badges, gradient headings */
-  --td-gradient: linear-gradient(126deg, hsl(260,39%,42%), hsl(287,37%,42%), hsl(347,62%,58%));
+  /* Signature brand color — primary buttons, badges, headings.
+     Flattened from the old purple→pink gradient to a solid purple; the
+     --td-gradient name is kept so every var(--td-gradient) reference updates at once. */
+  --td-gradient: hsl(260, 39%, 42%);
 
   /* Text */
   --td-text:        #020817; /* headings / near-black */
@@ -400,9 +402,23 @@ body.th-ai-bootcamp-2026 { margin: 0; }
 
 @media (max-width: 1024px) {
   .th-ai-bootcamp-2026 .hero__grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .th-ai-bootcamp-2026 .hero__visual { min-height: 24rem; margin-top: 0.5rem; }
+  /* Hero visual: as soon as the hero collapses to a single column (≤1024), stack
+     the cards vertically. The layered/absolute treatment is only safe in the
+     two-column desktop hero — in one column the app card and prompt card overlap,
+     so we stack them with a gap instead. */
+  .th-ai-bootcamp-2026 .hero__visual { position: relative; min-width: 0; min-height: 0; display: flex; flex-direction: column; gap: 1.5rem; max-width: 28rem; margin: 0.5rem auto 0; }
+  .th-ai-bootcamp-2026 .hero-app { position: relative; width: 100%; max-width: 100%; min-width: 0; order: 0; z-index: 1; }
+  .th-ai-bootcamp-2026 .hero-chat { position: static; width: 100%; max-width: 100%; min-width: 0; order: 2; }
+  .th-ai-bootcamp-2026 .hero-app__stats { gap: 0.5rem; }
+  /* Overlap the badge onto the app card's bottom-left, mirroring the desktop hero.
+     The negative top margin measures from the app card's bottom edge (flex flow),
+     so the overlap is constant regardless of the card's height. */
+  .th-ai-bootcamp-2026 .hero-badge { position: relative; order: 1; align-self: flex-start; width: auto; margin: -3rem 0 0 -0.5rem; z-index: 3; }
   .th-ai-bootcamp-2026 .cred__grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .th-ai-bootcamp-2026 .cred__photo { max-width: 20rem; }
+  /* Single-column: center the logo and the stat trio horizontally. */
+  .th-ai-bootcamp-2026 .cred__photo { max-width: 20rem; margin-left: auto; margin-right: auto; }
+  .th-ai-bootcamp-2026 .cred__stats { justify-content: center; }
+  .th-ai-bootcamp-2026 .cred__stats > div { text-align: center; }
 }
 
 @media (max-width: 768px) {
@@ -428,26 +444,17 @@ body.th-ai-bootcamp-2026 { margin: 0; }
   .th-ai-bootcamp-2026 .career-card__image { aspect-ratio: 16 / 9; }
   .th-ai-bootcamp-2026 .career-card__image svg { width: 3.5rem; height: 3.5rem; }
   .th-ai-bootcamp-2026 .career-card__image--photo { aspect-ratio: 4 / 3; }
-  .th-ai-bootcamp-2026 .overview__stats { grid-template-columns: repeat(2, 1fr); }
+  .th-ai-bootcamp-2026 .overview__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .th-ai-bootcamp-2026 .ov-stat { padding: 1.25rem 1rem; }
+  .th-ai-bootcamp-2026 .ov-stat__num { font-size: 1.375rem; }
   .th-ai-bootcamp-2026 .tree__connector { display: none; }
   .th-ai-bootcamp-2026 .tree__branches { grid-template-columns: 1fr; gap: 1rem; margin-top: 1.5rem; }
   .th-ai-bootcamp-2026 .track-card { padding: 1.75rem 1.5rem; }
   .th-ai-bootcamp-2026 .track-card__title { font-size: 1.25rem; }
+  .th-ai-bootcamp-2026 .track-card__cta { white-space: normal; text-align: center; line-height: 1.3; }
   .th-ai-bootcamp-2026 .offer__box { padding: 2rem 1.5rem; }
   .th-ai-bootcamp-2026 .offer__guarantee { flex-direction: column; align-items: flex-start; }
   .th-ai-bootcamp-2026 .who__slider { height: auto; flex-direction: column; }
   .th-ai-bootcamp-2026 .who-card { min-width: 0; height: 6rem; }
   .th-ai-bootcamp-2026 .who-card.is-active { flex: none; min-width: 0; height: 17.5rem; }
-  /* Hero visual: stack the layered cards vertically on mobile. The badge sits
-     at a fixed height while the chat card grows upward as its text wraps, so on
-     narrow screens the two can overlap; stacking removes that risk entirely and
-     keeps the full app card on-screen instead of clipping its right edge. */
-  .th-ai-bootcamp-2026 .hero__visual { position: static; min-width: 0; min-height: 0; display: flex; flex-direction: column; gap: 1rem; max-width: 28rem; margin-top: 1rem; }
-  .th-ai-bootcamp-2026 .hero-app,
-  .th-ai-bootcamp-2026 .hero-chat { position: static; width: 100%; max-width: 100%; min-width: 0; }
-  .th-ai-bootcamp-2026 .hero-app__stats { gap: 0.5rem; }
-  .th-ai-bootcamp-2026 .hero-badge { position: static; width: auto; align-self: flex-start; }
-  /* Stack order: app card, then the "Wait, YOU made this?" badge, then the prompt card. */
-  .th-ai-bootcamp-2026 .hero-badge { order: 1; }
-  .th-ai-bootcamp-2026 .hero-chat { order: 2; }
 }
