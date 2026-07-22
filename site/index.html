@@ -122,16 +122,9 @@
               <div class="hero-app__progress"><div></div></div>
             </div>
           </div>
-          <div class="hero-chat">
-            <div class="hero-chat__eyebrow">The prompt that built it</div>
-            <div class="hero-chat__prompt">
-              Build a plant care tracker with watering reminders and a health
-              dashboard…
-            </div>
-            <div class="hero-chat__meta">
-              <span class="dot dot--status"></span> Deployed · Day 28
-            </div>
-          </div>
+          <!-- Sits between the app card and the prompt card in source order so
+               the visual order is correct even if flexbox `order` never applies
+               (older browsers, reader modes, stylesheet failing to load). -->
           <div class="hero-badge">
             <div class="hero-badge__icon">
               <svg
@@ -158,6 +151,16 @@
                 &ldquo;Wait, YOU built this?&rdquo;
               </div>
               <div class="hero-badge__sub">when you share your live app</div>
+            </div>
+          </div>
+          <div class="hero-chat">
+            <div class="hero-chat__eyebrow">The prompt that built it</div>
+            <div class="hero-chat__prompt">
+              Build a plant care tracker with watering reminders and a health
+              dashboard…
+            </div>
+            <div class="hero-chat__meta">
+              <span class="dot dot--status"></span> Deployed · Day 28
             </div>
           </div>
         </div>

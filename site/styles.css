@@ -499,6 +499,9 @@ body.th-ai-bootcamp-2026 {
   display: flex;
   align-items: center;
   gap: 0.625rem;
+  /* Explicit stacking: the badge now precedes .hero-chat in source order, so it
+     needs this to keep painting above it (it used to rely on being last). */
+  z-index: 3;
 }
 .th-ai-bootcamp-2026 .hero-badge__icon {
   width: 2.25rem;
@@ -1228,12 +1231,16 @@ body.th-ai-bootcamp-2026 {
   padding: 0 0 1.375rem;
 }
 .th-ai-bootcamp-2026 .faq details p a {
-  color: #2563eb;
+  color: var(--td-accent-blue-solid);
   font-weight: 600;
-  text-decoration: underline;
+  text-decoration: none;
 }
-.th-ai-bootcamp-2026 .faq details p a:hover {
-  opacity: 0.85;
+/* Underline on hover/focus is the non-color cue for WCAG 1.4.1, since these
+   links aren't underlined at rest. No opacity fade — it would drop the link
+   below the 4.5:1 contrast minimum precisely while being interacted with. */
+.th-ai-bootcamp-2026 .faq details p a:hover,
+.th-ai-bootcamp-2026 .faq details p a:focus-visible {
+  text-decoration: underline;
 }
 
 /* =========================================================
@@ -1432,7 +1439,6 @@ body.th-ai-bootcamp-2026 {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    order: 0;
     z-index: 1;
   }
   .th-ai-bootcamp-2026 .hero-chat {
@@ -1440,7 +1446,6 @@ body.th-ai-bootcamp-2026 {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    order: 2;
   }
   .th-ai-bootcamp-2026 .hero-app__stats {
     gap: 0.5rem;
@@ -1450,7 +1455,6 @@ body.th-ai-bootcamp-2026 {
      so the overlap is constant regardless of the card's height. */
   .th-ai-bootcamp-2026 .hero-badge {
     position: relative;
-    order: 1;
     align-self: flex-start;
     width: auto;
     margin: -3rem 0 0 -0.5rem;
