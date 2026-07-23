@@ -1245,14 +1245,14 @@ body.th-ai-bootcamp-2026 {
 .th-ai-bootcamp-2026 .faq details p a {
   color: var(--td-accent-blue-solid);
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: underline;
 }
-/* Underline on hover/focus is the non-color cue for WCAG 1.4.1, since these
-   links aren't underlined at rest. No opacity fade — it would drop the link
-   below the 4.5:1 contrast minimum precisely while being interacted with. */
+/* Underlined at rest satisfies WCAG 1.4.1 outright — the link is distinguishable
+   from body text without relying on color. Hover/focus just thickens the rule;
+   no opacity fade, which would drop the link below 4.5:1 mid-interaction. */
 .th-ai-bootcamp-2026 .faq details p a:hover,
 .th-ai-bootcamp-2026 .faq details p a:focus-visible {
-  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 /* =========================================================
