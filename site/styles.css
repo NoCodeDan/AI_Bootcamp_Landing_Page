@@ -218,6 +218,13 @@ body.th-ai-bootcamp-2026 {
   min-height: 52px;
   padding: 0 2rem;
 }
+/* Icon inside a button (e.g. the syllabus book). Sized to the cap height and
+   inheriting the button's gap for spacing. */
+.th-ai-bootcamp-2026 .btn__icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+}
 
 /* Visible focus indicator (WCAG 2.4.7) */
 .th-ai-bootcamp-2026 a:focus-visible,
@@ -332,6 +339,17 @@ body.th-ai-bootcamp-2026 {
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
+}
+/* Small screens: once the two CTAs can't sit side by side, stack them and give
+   them equal (full) width instead of leaving them ragged at their content widths. */
+@media (max-width: 500px) {
+  .th-ai-bootcamp-2026 .hero__ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .th-ai-bootcamp-2026 .hero__ctas .btn {
+    width: 100%;
+  }
 }
 .th-ai-bootcamp-2026 .hero__proof {
   display: flex;
